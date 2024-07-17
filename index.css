@@ -66,3 +66,60 @@ a, a:hover{
     font-family: "M PLUS Code Latin", monospace;
     font-size: large;
 }
+
+.skill_set_1 {
+    font-family: "M PLUS Code Latin", monospace;
+    font-size: large;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:20px;
+    min-width: 400px;
+    width : 50%;
+    margin : 50px;
+    border-width: 1px;
+    border-color:black;
+    border-style: solid;
+}
+
+.edu_img_1{
+    background-image: url('front-end-developer.jpg');
+    background-size: contain;
+    width:40%;
+    height:150px;
+}
+
+.edu_abt_1{
+    margin-left: 50px;
+    width:58%;
+}
+
+
+.skill_set_2 {
+    font-family: "M PLUS Code Latin", monospace;
+    font-size: large;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:20px;
+    min-width: 400px;
+    width : 50%;
+    margin : 50px;
+    border-width: 1px;
+    border-color:black;
+    border-style: solid;
+}
+
+.edu_img_2{
+    background-image: url('edited_be.jpg');
+    background-size: contain;
+    width:40%;
+    height:150px;
+}
+
+.edu_abt_2{
+    margin-right: 50px;
+    width:58%;
+}
