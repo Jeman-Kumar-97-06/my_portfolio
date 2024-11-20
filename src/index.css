@@ -35,7 +35,7 @@ code {
 }
 
 .m,.e,.r,.n{
-  background-color: rgb(136, 134, 134);
+  background-color: rgb(59, 51, 2);
   font-weight: bolder;
 }
 
@@ -81,4 +81,89 @@ code {
   display:flex;
   flex-direction: column;
   align-items: center;
+}
+
+.portfolio_mern p {
+  display: inline-block;
+}
+
+.links_div{
+  width:90px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.project_each{
+  position:relative;
+  max-width: 600px;
+  margin-top : 20px;
+}
+
+.project_each .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.project_each .content h4, .project_each .content p {
+  margin-top: 2px;
+  margin-bottom : 2px;
+}
+
+@media only screen and (max-width:400px) {
+  body {
+    width: 393px;
+  }
+
+  .home_page {
+    width : 100%;
+  }
+
+  .top_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top_div p{
+    width:300px;
+    text-align:center;
+    line-height: 25px;
+  }
+
+  .skill_list {
+    width : 300px;
+    display: flex;
+    flex-wrap:wrap ;
+  }
+
+  .skill_list img {
+    margin : 15px;
+  }
+
+  .portfolio_mern,.links {
+    margin: auto;
+    width : 350px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .projects {
+    width : 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

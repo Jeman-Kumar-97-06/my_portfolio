@@ -17,26 +17,40 @@ const Home = () => {
                     <img src={require('./images/express.png')} alt='expressjs' width="50" height="50"/>
                     <img src={require('./images/redis.png')} alt='redis' width="50" height="50"/>
                     <img src={require('./images/linux.png')} alt='linux' width="50" height="50"/>
+                    <img src={require('./images/aws.png')} alt='aws' width="50" height="50"/>
+                    <img src={require('./images/next-js.256x256.png')} alt='nextjs' width="50" height="50"/>
                 </div>
             </div>
             <div className='portfolio_mern'>
-                <h2>MERN Stack Projects</h2>
+                <h2>Projects</h2>
                 <div className='projects'>
                     <div className='project_each'>
-                        <img alt='AI_Prompt_App'/>
-                        <p>An AI Prompt app that generates responses to user prompts. This uses GEMINI Api to generate responses</p>
+                        <img src={require("./images/Wallpaper_App.png")} alt='Wallpaper App' style={{width:"100%"}}/>
+                        <div className='content'>
+                            <a href='#'><h4>Wallpaper App</h4></a>
+                            <p>MongoDB,React,NodeJS,JWT</p>
+                        </div>
                     </div>
                     <div className='project_each'>
-                        <img alt='Notes_App'/>
-                        <p>A Personalized Notes app that used MERN stack technologies and JWT authentication</p>
+                        <img src={require("./images/To_Do_List.png")} alt='To_Do_List App' style={{width:"100%"}}/>
+                        <div className='content'>
+                            <a href='#'><h4>ToDoList App</h4></a>
+                            <p>MongoDB,React,NodeJS,JWT</p>
+                        </div>
                     </div>
                     <div className='project_each'>
-                        <img alt='Workout_Tracker'/>
-                        <p>A Personalized Workout Tracker app that used MERN stack technologies and JWT authentication</p>
+                        <img src={require("./images/WorkoutTracker.png")} alt='WOrkout Tracker App' style={{width:"100%"}}/>
+                        <div className='content'>
+                            <a href='#'><h4>Workout Tracker App</h4></a>
+                            <p>MongoDB,React,NodeJS,JWT</p>
+                        </div>
                     </div>
                     <div className='project_each'>
-                        <imp alt='To_Do_List'/>
-                        <p>A Tasks App to maintain, check and uncheck daily list of tasks.</p>
+                        <img src={require("./images/Notes_App.png")} alt='Notes App' style={{width:"100%"}}/>
+                        <div className='content'>
+                            <a href='#'><h4>Notes App</h4></a>
+                            <p>MongoDB,React,NodeJS,JWT</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,9 +61,11 @@ const Home = () => {
             </div>
 
             <div className='links'>
-                <h2>Contact</h2>
-                <a href='www.gmail.com'>mail</a>
-                <p>Phone : 9553925079</p>
+                <h2>My Links</h2>
+                <div className='links_div'>
+                    <a href='mailto:jeman060397@gmail.com'><img src={require('./images/gmail.png')} alt='gmail' width="24" height="24"/></a>
+                    <a href='https://github.com/Jeman-Kumar-97-06'><img src={require('./images/github.png')} alt='github' width="24" height="24"/></a>
+                </div>
             </div>
         </div>
     )
