@@ -28,28 +28,28 @@ const Home = () => {
                         <img src={require("./images/Wallpaper_App.png")} alt='Wallpaper App' style={{width:"100%"}}/>
                         <div className='content'>
                             <a href='#'><h4>Wallpaper App</h4></a>
-                            <p>MongoDB,React,NodeJS,JWT</p>
+                            <p>MongoDB,React,NodeJS,JWT in localStorage</p>
                         </div>
                     </div>
                     <div className='project_each'>
                         <img src={require("./images/To_Do_List.png")} alt='To_Do_List App' style={{width:"100%"}}/>
                         <div className='content'>
                             <a href='#'><h4>ToDoList App</h4></a>
-                            <p>MongoDB,React,NodeJS,JWT</p>
+                            <p>MongoDB,React,NodeJS,JWT in localStorage</p>
                         </div>
                     </div>
                     <div className='project_each'>
                         <img src={require("./images/WorkoutTracker.png")} alt='WOrkout Tracker App' style={{width:"100%"}}/>
                         <div className='content'>
                             <a href='#'><h4>Workout Tracker App</h4></a>
-                            <p>MongoDB,React,NodeJS,JWT</p>
+                            <p>MongoDB,React,NodeJS,JWT in localStorage</p>
                         </div>
                     </div>
                     <div className='project_each'>
                         <img src={require("./images/Notes_App.png")} alt='Notes App' style={{width:"100%"}}/>
                         <div className='content'>
                             <a href='#'><h4>Notes App</h4></a>
-                            <p>MongoDB,React,NodeJS,JWT</p>
+                            <p>MongoDB,React,NodeJS,JWT in localStorage</p>
                         </div>
                     </div>
                 </div>
