@@ -76,6 +76,10 @@ code {
   grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
 }
 
+.skills img {
+  margin-top: 35px;
+}
+
 .portfolio_mern {
   margin-top: 70px;
   display:flex;
