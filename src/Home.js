@@ -3,7 +3,7 @@ const Home = () => {
         <div className='home_page'>
             <div className='top_div'>
                 <h2>Jeman Kumar</h2>
-                <p>I'm an aspiring <span className='fsd'>Full Stack Developer</span> with strong foundations in <span className='m'>M</span><span className='e'>E</span><span className='r'>R</span><span className='n'>N</span> stack development. I love working on new and exciting technologies.</p>
+                {/* <p>I'm an aspiring <span className='fsd'>Full Stack Developer</span> with strong foundations in <span className='m'>M</span><span className='e'>E</span><span className='r'>R</span><span className='n'>N</span> stack development. I love working on new and exciting technologies.</p> */}
             </div>
             <div className='skills'>
                 <h2>My Skills</h2>

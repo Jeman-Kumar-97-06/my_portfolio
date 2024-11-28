@@ -1,4 +1,6 @@
 body {
+  width: 100vw;
+  height : 100vh;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -8,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F1F0E8;
 }
 
 code {
@@ -15,32 +18,28 @@ code {
     monospace;
 }
 
-.home_page{
-  width:700px;
+.App {
+  width : 100vw;
+  height : 100vh;
 }
 
-.top_div{
-  width:700px;
-  margin-top: 40px;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
+/* Styling the String 'Full Stack Developer' */
 .fsd{
-  background-color: yellow;
+  background-color: #89A8B2;
   border-width: 0.5px;
   border-style: solid;
   padding:2px;
 }
 
+/* Styling the String "MERN" */
 .m,.e,.r,.n{
-  background-color: rgb(59, 51, 2);
+  background-color: #89A8B2;
   font-weight: bolder;
+  padding:2.5px;
 }
 
 .m {
-  color:green;
+  color:rgb(5, 121, 5);
 }
 
 .e{
@@ -48,60 +47,17 @@ code {
 }
 
 .r{
-  color:lightskyblue;
+  color:rgb(4, 105, 168);
 }
 
 .n{
-  color:lightgreen;
+  color:rgb(1, 131, 12);
 }
 
-.top_div p{
-  width:400px;
-  text-align: right;
-  line-height: 25px;
-}
-
-.skills{
-  margin-top:50px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  width:700px;
-}
-
-.skill_list{
-  width:700px;
-  display: grid;
-  column-gap: 30px;
-  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-}
-
-.skills img {
-  margin-top: 35px;
-}
-
-.portfolio_mern {
-  margin-top: 70px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.portfolio_mern p {
-  display: inline-block;
-}
-
-.links_div{
-  width:90px;
-  display:flex;
-  flex-direction:row;
-  justify-content: space-between;
-  margin-bottom: 50px;
-}
-
+/* Styling each project */
 .project_each{
   position:relative;
-  max-width: 600px;
+  max-width: 500px;
   margin-top : 20px;
 }
 
@@ -109,16 +65,25 @@ code {
   position: absolute; /* Position the background text */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
   background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: #f1f1f1; /* Grey text */
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  color: white; /* Grey text */
   width: 100%; /* Full width */
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
 }
 
 .project_each .content h4, .project_each .content p {
   margin-top: 2px;
   margin-bottom : 2px;
+}
+
+.home_page{
+  width : 100vw;
+  margin : 30px; 
+}
+
+.top_div {
+
 }
 
 @media only screen and (max-width:400px) {
