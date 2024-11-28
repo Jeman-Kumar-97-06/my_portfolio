@@ -2,11 +2,11 @@ const Home = () => {
     return (
         <div className='home_page'>
             <fieldset className='top_div'>
-                <legend>Jeman Kumar</legend>
+                <legend>JEMAN KUMAR.</legend>
                 <p>I'm an aspiring <span className='fsd'>Full Stack Developer</span> with strong foundations in <span className='m'>M</span><span className='e'>E</span><span className='r'>R</span><span className='n'>N</span> stack development. I love working on new and exciting technologies.</p>
             </fieldset>
             <fieldset className='skills'>
-                <legend>My Skills</legend>
+                <legend>my skills.</legend>
                 <div className='skill_list'>
                     <img src={require('./images/html-5.png')} alt='html5' width="50" height="50"/>
                     <img src={require('./images/css-3.png')} alt='css3' width="50" height="50"/>
@@ -22,7 +22,7 @@ const Home = () => {
                 </div>
             </fieldset>
             <fieldset className='portfolio_mern'>
-                <legend>Projects</legend>
+                <legend>projects.</legend>
                 <div className='projects'>
                     <div className='project_each'>
                         <img src={require("./images/Wallpaper_App.png")} alt='Wallpaper App' style={{width:"100%"}}/>
@@ -56,12 +56,12 @@ const Home = () => {
             </fieldset>
             
             <fieldset className='links'>
-                <legend>Certifications</legend>
-                <a href='https://www.udemy.com/certificate/UC-d0914537-adbb-40c6-81f5-f1f03898a7ed/'>Full Stack Web Development</a>
+                <legend>certifications.</legend>
+                <a href='https://www.udemy.com/certificate/UC-d0914537-adbb-40c6-81f5-f1f03898a7ed/'>full stack web development</a>
             </fieldset>
 
             <fieldset className='links'>
-                <legend>My Links</legend>
+                <legend>my links.</legend>
                 <div className='links_div'>
                     <a href='mailto:jeman060397@gmail.com'><img src={require('./images/gmail.png')} alt='gmail' width="24" height="24"/></a>
                     <a href='https://github.com/Jeman-Kumar-97-06'><img src={require('./images/github.png')} alt='github' width="24" height="24"/></a>
