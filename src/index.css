@@ -21,6 +21,7 @@ code {
 .App {
   width : 100vw;
   height : 100vh;
+  margin: 0;
 }
 
 /* Styling the String 'Full Stack Developer' */
@@ -78,12 +79,11 @@ code {
 }
 
 .home_page{
-  width : 100vw;
   margin : 30px; 
 }
 
 .top_div {
-
+  
 }
 
 @media only screen and (max-width:400px) {
