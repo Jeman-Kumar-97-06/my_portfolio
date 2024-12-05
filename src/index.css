@@ -1,66 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-body {
-  width: 100vw;
-  height : 100vh;
-  margin: 0;
-  font-size: medium;
-  font-family: "Cardo", serif;
-  font-weight: 400;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #F1F0E8;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.App {
-  width : 100vw;
-  height : 100vh;
-  margin: 0;
-}
-
-/* Styling the String 'Full Stack Developer' */
-.fsd{
-  background-color: #89A8B2;
-  border-width: 0.5px;
-  border-style: solid;
-  padding:2px;
-}
-
-/* Styling the String "MERN" */
-.m,.e,.r,.n{
-  background-color: #89A8B2;
-  font-weight: bolder;
-  padding:2.5px;
-}
-
-.m {
-  color:rgb(5, 121, 5);
-}
-
-.e{
-  color:white;
-}
-
-.r{
-  color:rgb(4, 105, 168);
-}
-
-.n{
-  color:rgb(1, 131, 12);
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Six+Caps&display=swap');
 /* Styling each project */
 .project_each{
   position:relative;
-  max-width: 500px;
+  max-width: 400px;
   margin-top : 20px;
 }
 
@@ -80,64 +22,102 @@ code {
   margin-bottom : 2px;
 }
 
-.home_page{
-  margin : 30px; 
+.App, #root{
+  width:100vw;
 }
 
-.top_div legend{
-  font-family: "Josefin Sans", sans-serif;
+/* All Other Styles: */
+body{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width:100%;
+  margin:0;
+  padding:0;
+  font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bolder;
+  font-weight: lighter;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Top Div Styles: */
+
+.top_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 96vw;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.make_head,h3{
+  text-decoration: none;
+  color:black;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
   font-style: normal;
 }
 
-@media only screen and (max-width:400px) {
-  body {
-    width: 393px;
-  }
+h4{
+  text-decoration: none;
+  color:black;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400;
+  font-size:20px;
+  font-style: normal;
+}
 
-  .home_page {
-    width : 100%;
-  }
+.top_div p{
+  width: 400px;
+  text-align: right;
+}
 
-  .top_div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+/* Skills Div Styles: */
+.skills{
+  margin-top:50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .top_div p{
-    width:300px;
-    text-align:center;
-    line-height: 25px;
-  }
+.skill_list{
+  width:70%;
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
-  .skill_list {
-    width : 300px;
-    display: flex;
-    flex-wrap:wrap ;
-  }
+.portfolio_mern{
+  margin-top:60px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .skill_list img {
-    margin : 15px;
-  }
+.project_each{
+  margin: 25px;
+}
 
-  .portfolio_mern,.links {
-    margin: auto;
-    width : 350px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* Link Styles: */
+.links{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .projects {
-    width : 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
+.links_div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width:150px;
 }
