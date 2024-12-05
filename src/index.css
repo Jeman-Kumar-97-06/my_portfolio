@@ -1,16 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Six+Caps&family=Yesteryear&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Six+Caps&display=swap'); */
+
 /* Styling each project */
 .project_each{
   position:relative;
   max-width: 400px;
   margin-top : 20px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: black;
+  border-width: 0.5px;
+  box-shadow: 4px 4px 10px black;
+}
+
+.project_each:hover{
+  top:4px;
+  left:4px;
+  box-shadow: none;
 }
 
 .project_each .content {
   position: absolute; /* Position the background text */
+  background: linear-gradient(90deg, transparent, rgba(2, 2, 2, 0.3), transparent);
+  transition: .5s;
+	/* background: linear-gradient(
+		90deg,
+		rgba(110, 107, 107, 0.888) 0%,
+		rgba(180, 170, 170, 0.888) 50%,
+		rgba(110, 107, 107, 0.888) 100%
+	); */
   bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  /* background: rgb(0, 0, 0); /* Fallback color */
+  /* background: rgba(0, 0, 0, 0.3); Black background with 0.5 opacity */
   color: white; /* Grey text */
   width: 100%; /* Full width */
   box-sizing: border-box;
@@ -20,6 +41,7 @@
 .project_each .content h4, .project_each .content p {
   margin-top: 2px;
   margin-bottom : 2px;
+  color:black;
 }
 
 .App, #root{
@@ -28,6 +50,7 @@
 
 /* All Other Styles: */
 body{
+  background-color: #FFF6E9;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -49,10 +72,57 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 96vw;
   margin-left:auto;
   margin-right: auto;
 }
+
+.text-container {
+      border-style: solid;
+      border-color: black;
+      border-width:0.5px;
+      width: 250px;
+      height: 18px;
+      background-image: linear-gradient(to bottom right, rgb(255, 255, 1), #091057);
+      background-size: 200% 200%;
+      animation: retrobackg 1.5s infinite alternate;
+      animation-timing-function: ease-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: visible; /* Allow the text to overflow vertically */
+}
+
+.name_mine{
+  font-size: 47px; /* Text is much larger than the div */
+  line-height: 1;   /* Ensures text does not adjust based on line height */
+  color: rgb(24, 20, 20);
+  font-family: "Yesteryear", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mern{
+  box-sizing: border-box;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 17px; /* Text is much larger than the div */
+  line-height: 1;   /* Ensures text does not adjust based on line height */
+}
+
+.mern-container{
+      padding:2px;
+      width: 50px;
+      background-size: 200% 200%;
+      animation: mernbackg 6s infinite alternate;
+      display: inline;
+      justify-content: center;
+      align-items: center;
+      overflow: visible; /* Allow the text to overflow vertically */
+}
+
+
 
 .make_head,h3{
   text-decoration: none;
@@ -61,20 +131,45 @@ body{
   font-weight: 400;
   font-size: 40px;
   font-style: normal;
+  text-shadow: 2px 2px 3px gray;
+}
+
+@keyframes retrobackg{
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes mernbackg{
+  0%  {background: greenyellow;}
+  25% {background: gray;}
+  50% {background: rgb(7, 102, 165);}
+  100%{background: green;}
 }
 
 h4{
   text-decoration: none;
   color:black;
-  font-family: "Six Caps", sans-serif;
-  font-weight: 400;
-  font-size:20px;
-  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .top_div p{
-  width: 400px;
+  width: 600px;
   text-align: right;
+  line-height: 28px;
+}
+
+.fsd{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* Skills Div Styles: */
@@ -107,6 +202,10 @@ h4{
   margin: 25px;
 }
 
+.content p{
+  font-size:15px;
+}
+
 /* Link Styles: */
 .links{
   margin-top: 50px;
@@ -120,4 +219,31 @@ h4{
   flex-direction: row;
   justify-content: space-evenly;
   width:150px;
+  margin-bottom: 60px;
+}
+
+.links a{
+  text-decoration: none;
+  color:black;
+}
+
+@media only screen and (max-width:400px) {
+  .top_div{
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .fsd{
+    font-size: 17px;
+  }
+  .top_div p{
+    margin-top: 50px;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 13px;
+  }
+  .skill_list img{
+    margin:15px;
+  }
 }
