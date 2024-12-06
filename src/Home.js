@@ -35,28 +35,28 @@ const Home = () => {
                     <div className='project_each'>
                         <img src={require("./images/Wallpaper_App.png")} alt='Wallpaper App' style={{width:"100%"}}/>
                         <div className='content'>
-                            <a href='https://wallpaper-app-06-03.netlify.app/'><h4>Wallpaper App <span class="material-symbols-outlined">link</span></h4></a>
+                            <a href='https://wallpaper-app-06-03.netlify.app/' target='_blank'><h4>Wallpaper App <span class="material-symbols-outlined">link</span></h4></a>
                             <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
                         </div>
                     </div>
                     <div className='project_each'>
                         <img src={require("./images/To_Do_List.png")} alt='To_Do_List App' style={{width:"100%"}}/>
                         <div className='content'>
-                            <a href='https://to-do-list-06-03.netlify.app'><h4>ToDoList App <span class="material-symbols-outlined">link</span></h4></a>
+                            <a href='https://to-do-list-06-03.netlify.app' target='_blank'><h4>ToDoList App <span class="material-symbols-outlined">link</span></h4></a>
                             <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
                         </div>
                     </div>
                     <div className='project_each'>
                         <img src={require("./images/WorkoutTracker.png")} alt='WOrkout Tracker App' style={{width:"100%"}}/>
                         <div className='content'>
-                            <a href='https://workout-tracker-06-03.netlify.app/'><h4>Workout Tracker App <span class="material-symbols-outlined">link</span></h4></a>
+                            <a href='https://workout-tracker-06-03.netlify.app/' target='_blank'><h4>Workout Tracker App <span class="material-symbols-outlined">link</span></h4></a>
                             <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
                         </div>
                     </div>
                     <div className='project_each'>
                         <img src={require("./images/Notes_App.png")} alt='Notes App' style={{width:"100%"}}/>
                         <div className='content'>
-                            <a href='https://notes-app-06-03.netlify.app/'><h4>Notes App <span class="material-symbols-outlined link_icon">link</span></h4></a>
+                            <a href='https://notes-app-06-03.netlify.app/' target='_blank'><h4>Notes App <span class="material-symbols-outlined link_icon">link</span></h4></a>
                             <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
                         </div>
                     </div>
