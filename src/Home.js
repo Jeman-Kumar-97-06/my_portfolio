@@ -60,6 +60,14 @@ const Home = () => {
                             <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
                         </div>
                     </div>
+                    <div className='project_each'>
+                        <img src={require("./images/Book_store.png")} alt='Book Store App' style={{width:"100%"}}/>
+                        <div className='content'>
+                            <a href='https://book-store-06-03.netlify.app/' target='_blank'><h4>Book Store App <span class="material-symbols-outlined link_icon">link</span></h4></a>
+                            <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             
