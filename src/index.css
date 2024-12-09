@@ -20,12 +20,12 @@
 }
 
 .project_each .content {
-  position: absolute; /* Position the background text */
+  position: absolute; 
   background: linear-gradient(90deg, rgba(255, 246, 233, 0.5), rgba(255, 246, 233, 0.5), rgba(255, 246, 233, 0.5));
-  transition: .5s;
+  transition: .5s;  
   bottom: 0;
-  color: white; /* Grey text */
-  width: 100%; /* Full width */
+  color: white; 
+  width: 100%; 
   box-sizing: border-box;
   padding: 10px;
 }
