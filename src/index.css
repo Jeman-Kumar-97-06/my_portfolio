@@ -23,15 +23,7 @@
   position: absolute; /* Position the background text */
   background: linear-gradient(90deg, rgba(255, 246, 233, 0.5), rgba(255, 246, 233, 0.5), rgba(255, 246, 233, 0.5));
   transition: .5s;
-	/* background: linear-gradient(
-		90deg,
-		rgba(110, 107, 107, 0.888) 0%,
-		rgba(180, 170, 170, 0.888) 50%,
-		rgba(110, 107, 107, 0.888) 100%
-	); */
-  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-  /* background: rgb(0, 0, 0); /* Fallback color */
-  /* background: rgba(0, 0, 0, 0.3); Black background with 0.5 opacity */
+  bottom: 0;
   color: white; /* Grey text */
   width: 100%; /* Full width */
   box-sizing: border-box;
