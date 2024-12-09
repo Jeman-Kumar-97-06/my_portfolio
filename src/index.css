@@ -21,7 +21,7 @@
 
 .project_each .content {
   position: absolute; /* Position the background text */
-  background: linear-gradient(90deg, transparent, rgba(2, 2, 2, 0.3), transparent);
+  background: linear-gradient(90deg, rgba(255, 246, 233, 0.5), rgba(255, 246, 233, 0.5), rgba(255, 246, 233, 0.5));
   transition: .5s;
 	/* background: linear-gradient(
 		90deg,
@@ -204,6 +204,7 @@ h4{
 
 .content p{
   font-size:15px;
+  font-weight: bolder;
 }
 
 /* Link Styles: */
