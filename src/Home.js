@@ -26,7 +26,6 @@ const Home = () => {
                     <img src={require('./images/aws.png')} alt='aws' width="50" height="50"/>
                     <img src={require('./images/graphql-icon.png')} alt='graphql' width='50' height='50'/>
                     <img src={require('./images/docker.png')} alt='docker' width='50' height='50'/>
-                    {/* <img src={require('./images/next-js.256x256.png')} alt='nextjs' width="50" height="50"/> */}
                 </div>
             </div>
             <div className='portfolio_mern'>
