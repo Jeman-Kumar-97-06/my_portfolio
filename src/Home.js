@@ -46,7 +46,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='project_each'>
-                        <img src={require("./images/WorkoutTracker.png")} alt='WOrkout Tracker App' style={{width:"100%"}}/>
+                        <img src={require("./images/WorkoutTracker.png")} alt='Workout Tracker App' style={{width:"100%"}}/>
                         <div className='content'>
                             <a href='https://workout-tracker-06-03.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Workout Tracker App <span class="material-symbols-outlined">link</span></h4></a>
                             <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
