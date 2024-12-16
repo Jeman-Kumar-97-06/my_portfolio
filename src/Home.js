@@ -39,6 +39,13 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='project_each'>
+                        <img src={require("./images/Book_store.png")} alt='Book Store App' style={{width:"100%"}}/>
+                        <div className='content'>
+                            <a href='https://book-store-06-03.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Book Store App <span class="material-symbols-outlined link_icon">link</span></h4></a>
+                            <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
+                        </div>
+                    </div>
+                    <div className='project_each'>
                         <img src={require("./images/To_Do_List.png")} alt='To_Do_List App' style={{width:"100%"}}/>
                         <div className='content'>
                             <a href='https://to-do-list-06-03.netlify.app' target='_blank' rel='noopener noreferrer'><h4>ToDoList App <span class="material-symbols-outlined">link</span></h4></a>
@@ -58,15 +65,7 @@ const Home = () => {
                             <a href='https://notes-app-06-03.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Notes App <span class="material-symbols-outlined link_icon">link</span></h4></a>
                             <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
                         </div>
-                    </div>
-                    <div className='project_each'>
-                        <img src={require("./images/Book_store.png")} alt='Book Store App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://book-store-06-03.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Book Store App <span class="material-symbols-outlined link_icon">link</span></h4></a>
-                            <p>HTML+CSS+JS+React+NodeJS+MongoDB+JWT</p>
-                        </div>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
             
