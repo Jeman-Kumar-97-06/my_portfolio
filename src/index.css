@@ -220,7 +220,7 @@ h4{
   color:black;
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:500px) {
   .top_div{
     flex-direction: column;
     margin-top: 50px;
