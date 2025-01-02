@@ -186,8 +186,11 @@ h4{
   align-items:center;
 }
 .projects{
+  margin-right:auto;
+  margin-left:auto;
   display: flex;
   flex-wrap: wrap;
+  width:90vw;
 }
 
 .project_each{
