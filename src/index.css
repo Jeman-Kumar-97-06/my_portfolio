@@ -223,6 +223,20 @@ h4{
   color:black;
 }
 
+.footer{
+  width:100%;
+  background-color: black;
+  color:white;
+  position: relative;
+  bottom:0;
+  margin:0;
+  padding:5px;
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 @media only screen and (max-width:920px) {
   .top_div{
     flex-direction: column;
