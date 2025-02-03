@@ -6,9 +6,7 @@ const Home = () => {
                     <h3 className='name_mine'>Jeman Kumar.</h3>
                 </div>
                 <p>
-                    <span style={{fontSize:"25px",fontWeight:"bold",fontStyle:"italic"}}>"</span>I am an aspiring <span className='fsd'>Full Stack Developer </span> with a solid foundation in <span className='mern-container'><span className='mern'>MERN</span></span> stack, I enjoy building responsive, user-friendly web apps. 
-                    I have an enthusiasm for problem-solving and continuously learning frameworks 
-                    to stay updated with the trends. I am excited to contribute my skills and creativity to deliver impactful solutions as part of a dynamic development team.<span style={{fontSize:"25px",fontWeight:"bold",fontStyle:"italic"}}>"</span>
+                    <span style={{fontSize:"25px",fontWeight:"bold",fontStyle:"italic"}}>"</span>Aspiring <span className='fsd'>Full Stack Developer </span> with a strong <span className='mern-container'><span className='mern'>MERN</span></span> foundation, passionate about building responsive web apps. Enthusiastic problem-solver, always learning new frameworks to stay ahead. Eager to work as a part of a dynamic team.<span style={{fontSize:"25px",fontWeight:"bold",fontStyle:"italic"}}>"</span>
                 </p>
             </div>
             <div className='skills'>

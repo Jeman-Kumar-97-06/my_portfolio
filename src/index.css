@@ -42,7 +42,7 @@
 
 /* All Other Styles: */
 body{
-  background-color: #FFF6E9;
+  background-color: #F5F5F5;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -70,15 +70,15 @@ body{
   margin-right: auto;
 }
 
-.text-container {
+.text-container {      
       border-style: solid;
       border-color: black;
       border-width:0.5px;
-      width: 250px;
-      height: 18px;
-      background-image: linear-gradient(to bottom right, rgb(255, 255, 1), #091057);
+      width: 300px;
+      height: 30px;
+      background-image: linear-gradient(to bottom right, rgba(143,209,79,0.5),rgba(255,102,0,0.5),rgba(67,53,167,0.5));
       background-size: 200% 200%;
-      animation: retrobackg 1.5s infinite alternate;
+      animation: retrobackg 2s infinite alternate;
       animation-timing-function: ease-in;
       display: flex;
       justify-content: center;
@@ -87,7 +87,7 @@ body{
 }
 
 .name_mine{
-  font-size: 47px; /* Text is much larger than the div */
+  font-size: 55px; /* Text is much larger than the div */
   line-height: 1;   /* Ensures text does not adjust based on line height */
   color: rgb(24, 20, 20);
   font-family: "Yesteryear", cursive;
@@ -98,7 +98,6 @@ body{
 .mern{
   box-sizing: border-box;
   font-weight: bold;
-  font-style: italic;
   font-size: 17px; /* Text is much larger than the div */
   line-height: 1;   /* Ensures text does not adjust based on line height */
 }
@@ -119,7 +118,7 @@ body{
 .make_head,h3{
   text-decoration: none;
   color:black;
-  font-family: "Six Caps", sans-serif;
+  font-family: "Yesteryear", cursive;
   font-weight: 400;
   font-size: 40px;
   font-style: normal;
@@ -158,9 +157,10 @@ h4{
 }
 
 .fsd{
-  font-family: "Open Sans", sans-serif;
+  font-family: "Yesteryear", cursive;
+  font-size : 35px;
   font-optical-sizing: auto;
-  font-weight: bold;
+  font-weight: 400;
   font-style: italic;
 }
 
@@ -190,7 +190,7 @@ h4{
   margin-left:auto;
   display: flex;
   flex-wrap: wrap;
-  width:90vw;
+  width:98vw;
 }
 
 .project_each{
