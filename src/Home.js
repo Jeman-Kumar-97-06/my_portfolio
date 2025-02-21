@@ -1,4 +1,22 @@
+import { useEffect } from 'react';
+
 const Home = () => {
+    useEffect(()=>{
+        async function getLeetCodeStats(username) {
+            const response = await fetch(`https://leetcode-api.vercel.app/api/profile/${username}`);
+            const data = await response.json();
+            const data_res = data.data;
+            console.log(data_res)
+            document.querySelector(".leetcode_progress").innerHTML = `
+                <h3>Leetcode Progress.</h3>
+                <p>👑 Ranking: ${data_res.matchedUser.profile.ranking}</p>
+                <p>✅ Total Solved: ${data_res.matchedUser.submitStats.acSubmissionNum[0].count}</p>
+                <p>💪 Easy: ${data_res.matchedUser.submitStats.acSubmissionNum[1].count} | Medium: ${data_res.matchedUser.submitStats.acSubmissionNum[2].count} | Hard: ${data_res.matchedUser.submitStats.acSubmissionNum[3].count}</p>
+            `;
+        }
+        
+        getLeetCodeStats("Jeman_Kumar_97");
+    },[])
     return (
         <div className='home_page'>
             <div className='top_div'>
@@ -71,6 +89,10 @@ const Home = () => {
                 <h3>Certifications.</h3>
                 <a href='https://www.udemy.com/certificate/UC-d0914537-adbb-40c6-81f5-f1f03898a7ed/' target='_blank' rel='noopener noreferrer'>Full Stack Web Development <span class="material-symbols-outlined">link</span></a>
                 <a href='https://www.udemy.com/certificate/UC-a738e745-015c-4e5d-9d49-76795b637dfd/' target='_blank' rel='noopener noreferrer'>React Development Bootcamp <span class="material-symbols-outlined">link</span></a>
+            </div>
+
+            <div className='leetcode_progress'>
+
             </div>
 
             <div className='links'>

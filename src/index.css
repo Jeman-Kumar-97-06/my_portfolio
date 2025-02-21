@@ -237,6 +237,18 @@ h4{
   }
 }
 
+.leetcode_progress {
+  p{
+    margin-bottom: 5px;
+  };
+  h3{
+    margin-bottom: 10px;
+  }
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 @media only screen and (max-width:920px) {
   .top_div{
     flex-direction: column;
