@@ -50,8 +50,8 @@ const Home = () => {
                     <div className='project_each'>
                         <img src={require("./images/Wallpaper_App.png")} alt='Wallpaper App' style={{width:"100%"}}/>
                         <div className='content'>
-                            <a href='https://wallpaper-app-06-03.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Wallpaper App <span class="material-symbols-outlined">link</span></h4></a>
-                            <p>HTML | CSS | JS | React | NodeJS | MongoDB | JWT</p>
+                            <a href='https://resplendent-babka-6b85c1.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Wallpaper App <span class="material-symbols-outlined">link</span></h4></a>
+                            <p>TailwindCSS | Masonry Layout | React | NodeJS | MongoDB | JWT</p>
                         </div>
                     </div>
                     <div className='project_each'>
