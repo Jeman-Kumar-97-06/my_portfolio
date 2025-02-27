@@ -191,6 +191,7 @@ h4{
   display: flex;
   flex-wrap: wrap;
   width:98vw;
+  justify-content: center;
 }
 
 .project_each{
