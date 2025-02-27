@@ -62,6 +62,13 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='project_each'>
+                        <img src={require("./images/Chat_App.png")} alt='Chat App' style={{width:"100%"}}/>
+                        <div className='content'>
+                            <a href='https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App' target='_blank' rel='noopener noreferrer'><h4>Chat App [Coming Soon]<span class="material-symbols-outlined">link</span></h4></a>
+                            <p>TailwindCSS |React | NodeJS | SocketIO | MongoDB | JWT</p>
+                        </div>
+                    </div>
+                    <div className='project_each'>
                         <img src={require("./images/To_Do_List.png")} alt='To_Do_List App' style={{width:"100%"}}/>
                         <div className='content'>
                             <a href='https://to-do-list-06-03.netlify.app' target='_blank' rel='noopener noreferrer'><h4>ToDoList App <span class="material-symbols-outlined">link</span></h4></a>
@@ -95,10 +102,10 @@ const Home = () => {
 
             </div>
             <div className='github_progress'>
-                <h3>Git Stats.</h3>
-                <img className='grade' src="https://github-readme-stats.vercel.app/api?username=Jeman-Kumar-97-06&show_icons=true&theme=dark" />
+                <h3>Github Stats.</h3>
+                <img className='grade' alt='github status' src="https://github-readme-stats.vercel.app/api?username=Jeman-Kumar-97-06&show_icons=true&theme=dark" />
                 <img className='grind' alt='github streak' src="https://github-readme-streak-stats.herokuapp.com/?user=Jeman-Kumar-97-06&theme=dark" />
-                <img className='langs' src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeman-Kumar-97-06&layout=compact&theme=dark" />
+                <img className='langs' alt='lang_mix'      src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeman-Kumar-97-06&layout=compact&theme=dark" />
             </div>  
             
             <div className='links'>
