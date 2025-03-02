@@ -62,6 +62,13 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='project_each'>
+                        <img src={require("./images/CodeAnalyser.png")} alt='Code Analyser App' style={{width:"100%"}}/>
+                        <div className='content'>
+                            <a href='https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Code Analyser App<span class="material-symbols-outlined">link</span></h4></a>
+                            <p>TailwindCSS | Masonry Layout | React | NodeJS | MongoDB | JWT</p>
+                        </div>
+                    </div>
+                    <div className='project_each'>
                         <img src={require("./images/Chat_App.png")} alt='Chat App' style={{width:"100%"}}/>
                         <div className='content'>
                             <a href='https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App' target='_blank' rel='noopener noreferrer'><h4>Chat App [Coming Soon]<span class="material-symbols-outlined">link</span></h4></a>
