@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import GithubCalender from 'react-github-calender';
 
 const Home = () => {
     useEffect(()=>{
@@ -113,8 +112,6 @@ const Home = () => {
                 <img className='grade' alt='github status' src="https://github-readme-stats.vercel.app/api?username=Jeman-Kumar-97-06&show_icons=true&theme=dark" />
                 <img className='grind' alt='github streak' src="https://github-readme-streak-stats.herokuapp.com/?user=Jeman-Kumar-97-06&theme=dark" />
                 <img className='langs' alt='lang_mix'      src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeman-Kumar-97-06&layout=compact&theme=dark" />
-                <GithubCalender username='Jeman-Kumar-97-06' colorScheme='dark'/>
-
             </div>  
             
             <div className='links'>
