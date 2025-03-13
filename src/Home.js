@@ -77,7 +77,7 @@ const Home = () => {
                     <div className='project_each'>
                         <img src={require("./images/Chat_App.png")} alt='Chat App' style={{width:"100%"}}/>
                         <div className='content'>
-                            <a href='https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App' target='_blank' rel='noopener noreferrer'><h4>Chat App [Coming Soon]<span class="material-symbols-outlined">link</span></h4></a>
+                            <a href='https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App' target='_blank' rel='noopener noreferrer'><h4>Chat App [Github Link]<span class="material-symbols-outlined">link</span></h4></a>
                             <p>TailwindCSS |React | NodeJS | SocketIO | MongoDB | JWT</p>
                         </div>
                     </div>
