@@ -98,7 +98,7 @@ const Home = () => {
                     <div className='project_each'>
                         <img src={require("./images/WorkoutTracker.png")} alt='Workout Tracker App' style={{width:"100%"}}/>
                         <div className='content'>
-                            <a href='https://workout-tracker-06-03.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Workout Tracker App <span class="material-symbols-outlined">link</span></h4></a>
+                            <a href='https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker' target='_blank' rel='noopener noreferrer'><h4>Workout Tracker App [Github Link]<span class="material-symbols-outlined">link</span></h4></a>
                             <p>HTML | CSS | JS | React | NodeJS | MongoDB | JWT</p>
                         </div>
                     </div>               
