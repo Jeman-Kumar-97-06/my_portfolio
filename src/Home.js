@@ -49,7 +49,7 @@ const Home = () => {
                     <div className='project_each'>
                         <img src={require("./images/image_gen.png")} alt='Image Gen App' style={{width:"100%"}}/>
                         <div className='content'>
-                            <a href='https://resplendent-babka-6b85c1.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Image Generation App <span class="material-symbols-outlined">link</span></h4></a>
+                            <a href='https://imagegen0603.vercel.app/' target='_blank' rel='noopener noreferrer'><h4>Image Generation App <span class="material-symbols-outlined">link</span></h4></a>
                             <p>ImagePig API | React | NodeJS | MongoDB | Cloudinary</p>
                         </div>
                     </div>
