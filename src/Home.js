@@ -21,23 +21,9 @@ import aws from './images/aws.png';
 import graphql from './images/graphql-icon.png';
 import docker from './images/docker.png';
 
-// <img src={require('/images/html-5.png')} alt='html5' width="50" height="50"/>
-//                     <img src={require('/images/css-3.png')} alt='css3' width="50" height="50"/>
-//                     <img src={require('/images/javascript.png')} alt='js' width="50" height="50"/>
-//                     <img src={require('/images/nodejs.png')} alt='nodejs' width="50" height="50"/>
-//                     <img src={require('/images/react.png')} alt='reactjs' width="50" height="50"/>
-//                     <img src={require('/images/mongodb.png')} alt='mongodb' width="50" height="50"/>
-//                     <img src={require('/images/express.png')} alt='expressjs' width="50" height="50"/>
-//                     <img src={require('/images/redis.png')} alt='redis' width="50" height="50"/>
-//                     <img src={require('/images/linux.png')} alt='linux' width="50" height="50"/>
-//                     <img src={require('/images/aws.png')} alt='aws' width="50" height="50"/>
-//                     <img src={require('/images/graphql-icon.png')} alt='graphql' width='50' height='50'/>
-//                     <img src={require('/images/docker.png')} alt='docker' width='50' height='50'/>
-
 const Home = () => {
-
     const projects_yo = [
-        { title: "Image Generation App", description: "Analyze code efficiently.",image:image_gen,link:'https://imagegen0603.vercel.app/' },
+        { title: "Image Generation App", description: "Analyze code efficiently.",image:image_gen,link:'https://imagegen0603-4nf0qfsjq-jemans-projects.vercel.app/' },
         { title: "Wallpaper App", description: "Secure notes with JWT authentication.",image:Wallpaper_App,link:'https://resplendent-babka-6b85c1.netlify.app/'},
         { title: "Notes App", description: "Organize your tasks securely.",image:Notes_App,link:'https://notes-app-06-03.netlify.app/'},
         { title: "Book Store App", description: "Real-time messaging with WebSockets.",image:Book_store,link:'https://book-store-06-03.netlify.app/'},
