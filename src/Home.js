@@ -1,6 +1,53 @@
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import image_gen from './images/image_gen.png';
+import Wallpaper_App from './images/Wallpaper_App.png';
+import Notes_App from './images/Notes_App.png';
+import Book_store from './images/Book_store.png';
+import CodeAnalyser from './images/CodeAnalyser.png';
+import Chat_App from './images/Chat_App.png';
+import To_Do_List from './images/To_Do_List.png';
+import WorkoutTracker from './images/WorkoutTracker.png';
+import html5 from './images/html-5.png';
+import css3 from './images/css-3.png';
+import javascript from './images/javascript.png';
+import nodejs from './images/nodejs.png';
+import react from './images/react.png';
+import mongodb from './images/mongodb.png';
+import express from './images/express.png';
+import redis from './images/redis.png';
+import linux from './images/linux.png';
+import aws from './images/aws.png';
+import graphql from './images/graphql-icon.png';
+import docker from './images/docker.png';
+
+// <img src={require('/images/html-5.png')} alt='html5' width="50" height="50"/>
+//                     <img src={require('/images/css-3.png')} alt='css3' width="50" height="50"/>
+//                     <img src={require('/images/javascript.png')} alt='js' width="50" height="50"/>
+//                     <img src={require('/images/nodejs.png')} alt='nodejs' width="50" height="50"/>
+//                     <img src={require('/images/react.png')} alt='reactjs' width="50" height="50"/>
+//                     <img src={require('/images/mongodb.png')} alt='mongodb' width="50" height="50"/>
+//                     <img src={require('/images/express.png')} alt='expressjs' width="50" height="50"/>
+//                     <img src={require('/images/redis.png')} alt='redis' width="50" height="50"/>
+//                     <img src={require('/images/linux.png')} alt='linux' width="50" height="50"/>
+//                     <img src={require('/images/aws.png')} alt='aws' width="50" height="50"/>
+//                     <img src={require('/images/graphql-icon.png')} alt='graphql' width='50' height='50'/>
+//                     <img src={require('/images/docker.png')} alt='docker' width='50' height='50'/>
 
 const Home = () => {
+
+    const projects_yo = [
+        { title: "Image Generation App", description: "Analyze code efficiently.",image:image_gen,link:'https://imagegen0603.vercel.app/' },
+        { title: "Wallpaper App", description: "Secure notes with JWT authentication.",image:Wallpaper_App,link:'https://resplendent-babka-6b85c1.netlify.app/'},
+        { title: "Notes App", description: "Organize your tasks securely.",image:Notes_App,link:'https://notes-app-06-03.netlify.app/'},
+        { title: "Book Store App", description: "Real-time messaging with WebSockets.",image:Book_store,link:'https://book-store-06-03.netlify.app/'},
+        { title: "Code Analyzer App", description: "Browse and buy books seamlessly.",image:CodeAnalyser,link:'https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/'},
+        { title: "Chat App", description: "Download high-quality wallpapers.",image:Chat_App,link:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App'},
+        { title: "To-Do List App",description: "Maintain ",image:To_Do_List,link:'https://to-do-list-06-03.netlify.app/'},
+        { title: "Workout Tracker App",description : "Maintain",image:WorkoutTracker,link:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker'}
+      ];
+
+
     useEffect(()=>{
         async function getLeetCodeStats(username) {
             const response = await fetch(`https://leetcode-api.vercel.app/api/profile/${username}`);
@@ -29,80 +76,44 @@ const Home = () => {
             <div className='skills'>
                 <h3>Skills.</h3>
                 <div className='skill_list'>
-                    <img src={require('./images/html-5.png')} alt='html5' width="50" height="50"/>
-                    <img src={require('./images/css-3.png')} alt='css3' width="50" height="50"/>
-                    <img src={require('./images/javascript.png')} alt='js' width="50" height="50"/>
-                    <img src={require('./images/nodejs.png')} alt='nodejs' width="50" height="50"/>
-                    <img src={require('./images/react.png')} alt='reactjs' width="50" height="50"/>
-                    <img src={require('./images/mongodb.png')} alt='mongodb' width="50" height="50"/>
-                    <img src={require('./images/express.png')} alt='expressjs' width="50" height="50"/>
-                    <img src={require('./images/redis.png')} alt='redis' width="50" height="50"/>
-                    <img src={require('./images/linux.png')} alt='linux' width="50" height="50"/>
-                    <img src={require('./images/aws.png')} alt='aws' width="50" height="50"/>
-                    <img src={require('./images/graphql-icon.png')} alt='graphql' width='50' height='50'/>
-                    <img src={require('./images/docker.png')} alt='docker' width='50' height='50'/>
+                    <img src={html5} alt='html5' width="50" height="50"/>
+                    <img src={css3} alt='css3' width="50" height="50"/>
+                    <img src={javascript} alt='js' width="50" height="50"/>
+                    <img src={nodejs} alt='nodejs' width="50" height="50"/>
+                    <img src={react} alt='reactjs' width="50" height="50"/>
+                    <img src={mongodb} alt='mongodb' width="50" height="50"/>
+                    <img src={express} alt='expressjs' width="50" height="50"/>
+                    <img src={redis} alt='redis' width="50" height="50"/>
+                    <img src={linux} alt='linux' width="50" height="50"/>
+                    <img src={aws} alt='aws' width="50" height="50"/>
+                    <img src={graphql} alt='graphql' width='50' height='50'/>
+                    <img src={docker} alt='docker' width='50' height='50'/>
                 </div>
             </div>
+
+            
+
             <div className='portfolio_mern'>
                 <h3>Projects.</h3>
-                <div className='projects'>
-                    <div className='project_each'>
-                        <img src={require("./images/image_gen.png")} alt='Image Gen App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://imagegen0603.vercel.app/' target='_blank' rel='noopener noreferrer'><h4>Image Generation App <span class="material-symbols-outlined">link</span></h4></a>
-                            <p>ImagePig API | React | NodeJS | MongoDB | Cloudinary</p>
-                        </div>
-                    </div>
-                    <div className='project_each'>
-                        <img src={require("./images/Wallpaper_App.png")} alt='Wallpaper App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://resplendent-babka-6b85c1.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Wallpaper App <span class="material-symbols-outlined">link</span></h4></a>
-                            <p>Masonry Layout | React | NodeJS | MongoDB | Cloudinary</p>
-                        </div>
-                    </div>
-                    <div className='project_each'>
-                        <img src={require("./images/Notes_App.png")} alt='Notes App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://notes-app-06-03.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Notes App <span class="material-symbols-outlined link_icon">link</span></h4></a>
-                            <p>HTML | CSS | JS | React | NodeJS | MongoDB | JWT</p>
-                        </div>
-                    </div>     
-                    <div className='project_each'>
-                        <img src={require("./images/Book_store.png")} alt='Book Store App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://book-store-06-03.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Book Store App <span class="material-symbols-outlined link_icon">link</span></h4></a>
-                            <p>HTML | CSS | JS | React | NodeJS | MongoDB | JWT</p>
-                        </div>
-                    </div>
-                    <div className='project_each'>
-                        <img src={require("./images/CodeAnalyser.png")} alt='Code Analyser App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/' target='_blank' rel='noopener noreferrer'><h4>Code Analyser App<span class="material-symbols-outlined">link</span></h4></a>
-                            <p>TailwindCSS | React | NodeJS | MongoDB | JWT | CodeMirror | Gemini AI</p>
-                        </div>
-                    </div>
-                    <div className='project_each'>
-                        <img src={require("./images/Chat_App.png")} alt='Chat App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App' target='_blank' rel='noopener noreferrer'><h4>Chat App [Github Link]<span class="material-symbols-outlined">link</span></h4></a>
-                            <p>TailwindCSS |React | NodeJS | SocketIO | MongoDB | JWT</p>
-                        </div>
-                    </div>
-                    <div className='project_each'>
-                        <img src={require("./images/To_Do_List.png")} alt='To_Do_List App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://to-do-list-06-03.netlify.app' target='_blank' rel='noopener noreferrer'><h4>ToDoList App <span class="material-symbols-outlined">link</span></h4></a>
-                            <p>HTML | CSS | JS | React | NodeJS | MongoDB | JWT</p>
-                        </div>
-                    </div>
-                    <div className='project_each'>
-                        <img src={require("./images/WorkoutTracker.png")} alt='Workout Tracker App' style={{width:"100%"}}/>
-                        <div className='content'>
-                            <a href='https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker' target='_blank' rel='noopener noreferrer'><h4>Workout Tracker App [Github Link]<span class="material-symbols-outlined">link</span></h4></a>
-                            <p>HTML | CSS | JS | React | NodeJS | MongoDB | JWT</p>
-                        </div>
-                    </div>               
-                </div>
+                <div className="projects-container">
+                {projects_yo.map((project, index) => (
+                    <motion.a
+                        key={index}
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-card"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={project.image} alt={project.title} className="project-image" />
+                        <h2>{project.title}</h2>
+                        <p>{project.description}</p>
+                    </motion.a>
+                ))}
+            </div>
             </div>
             
             <div className='links'>
