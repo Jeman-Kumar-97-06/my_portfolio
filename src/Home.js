@@ -28,10 +28,14 @@ const Home = () => {
         { title: "Notes App", description: "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",image:Notes_App,link:'https://notes-app-06-03.netlify.app/'},
         { title: "Book Store App", description: "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",image:Book_store,link:'https://book-store-06-03.netlify.app/'},
         { title: "Code Analyzer App", description: "A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using Gemini AI. It features a separate tab where users can paste coding problems and request AI-generated solutions. The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.",image:CodeAnalyser,link:'https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/'},
-        { title: "Chat App [github link]", description: "This application utilizes Socket.io to establish a real-time, two-way connection for seamless message transmission. It integrates MongoDB to efficiently store and manage messages, ensuring registered users can access their chat history anytime.",image:Chat_App,link:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App'},
         { title: "To-Do List App",description: "A simple and efficient to-do list application with MongoDB for persistent storage. Users can add, edit, delete, and mark tasks as completed, ensuring easy task management. Features JWT authentication for secure access.",image:To_Do_List,link:'https://to-do-list-06-03.netlify.app/'},
-        { title: "Workout Tracker App [github link]",description : "A fitness-focused CRUD application that helps users log, track, and manage workouts. Users can add exercises, track progress, and update workout details, with MongoDB ensuring data persistence and JWT authentication for secure access.",image:WorkoutTracker,link:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker'}
+        
       ];
+
+    const projects_i = [
+        { title: "Chat App [github link]", description: "This application utilizes Socket.io to establish a real-time, two-way connection for seamless message transmission. It integrates MongoDB to efficiently store and manage messages, ensuring registered users can access their chat history anytime.",image:Chat_App,link:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App'},
+        { title: "Workout Tracker App [github link]",description : "A fitness-focused CRUD application that helps users log, track, and manage workouts. Users can add exercises, track progress, and update workout details, with MongoDB ensuring data persistence and JWT authentication for secure access.",image:WorkoutTracker,link:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker'}
+    ]
 
 
     useEffect(()=>{
@@ -103,7 +107,28 @@ const Home = () => {
                         </div>
                     </motion.a>
                 ))}
-            </div>
+                {projects_i.map((project, index) => (
+                    <motion.a
+                        key={index}
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-card"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={project.image} alt={project.title} className="project-image" />
+                        <h2>{project.title}</h2>
+                        <p>{project.description}</p>
+                        <div className="credentials">
+                        <p><strong>Username:</strong> Jeman06</p>
+                        <p><strong>Password:</strong> Jeman123@</p>
+                        </div>
+                    </motion.a>
+                ))}
+                </div>
             </div>
             
             <div className='links'>
