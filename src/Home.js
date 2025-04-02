@@ -122,10 +122,6 @@ const Home = () => {
                         <img src={project.image} alt={project.title} className="project-image" />
                         <h2>{project.title}</h2>
                         <p>{project.description}</p>
-                        <div className="credentials">
-                        <p><strong>Username:</strong> Jeman06</p>
-                        <p><strong>Password:</strong> Jeman123@</p>
-                        </div>
                     </motion.a>
                 ))}
                 </div>
