@@ -23,20 +23,15 @@ import docker from './images/docker.png';
 
 const Home = () => {
     const projects_yo = [
-        { title: "Image Generation App", description: "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",image:image_gen,link:'https://imagegen0603-oitzkx0cf-jemans-projects.vercel.app',username:'Jeman06',password:'Jeman123@'},
+        { title: "Image Generation App", description: "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",image:image_gen,link:'https://imagegen0603-egt0qv5yn-jemans-projects.vercel.app/',username:'Jeman06',password:'Jeman123@'},
         { title: "Wallpaper App", description: "A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using Cloudinary for image hosting. It features JWT authentication for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.",image:Wallpaper_App,link:'https://resplendent-babka-6b85c1.netlify.app/'},
         { title: "Notes App", description: "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",image:Notes_App,link:'https://notes-app-06-03.netlify.app/'},
         { title: "Book Store App", description: "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",image:Book_store,link:'https://book-store-06-03.netlify.app/'},
         { title: "Code Analyzer App", description: "A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using Gemini AI. It features a separate tab where users can paste coding problems and request AI-generated solutions. The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.",image:CodeAnalyser,link:'https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/'},
         { title: "To-Do List App",description: "A simple and efficient to-do list application with MongoDB for persistent storage. Users can add, edit, delete, and mark tasks as completed, ensuring easy task management. Features JWT authentication for secure access.",image:To_Do_List,link:'https://to-do-list-06-03.netlify.app/'},
-        
-      ];
-
-    const projects_i = [
         { title: "Chat App [github link]", description: "This application utilizes Socket.io to establish a real-time, two-way connection for seamless message transmission. It integrates MongoDB to efficiently store and manage messages, ensuring registered users can access their chat history anytime.",image:Chat_App,link:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App'},
         { title: "Workout Tracker App [github link]",description : "A fitness-focused CRUD application that helps users log, track, and manage workouts. Users can add exercises, track progress, and update workout details, with MongoDB ensuring data persistence and JWT authentication for secure access.",image:WorkoutTracker,link:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker'}
-    ]
-
+      ];
 
     useEffect(()=>{
         async function getLeetCodeStats(username) {
@@ -87,7 +82,7 @@ const Home = () => {
                 <h3>Projects.</h3>
                 <div className="projects-container">
                 {projects_yo.map((project, index) => (
-                    <motion.a
+                    <motion.div
                         key={index}
                         href={project.link}
                         target="_blank"
@@ -105,10 +100,10 @@ const Home = () => {
                         {project.username ? <p><strong>Username:</strong> {project.username}</p> : ''}
                         {project.password ? <p><strong>Password:</strong> {project.password}</p> : ''}
                         </div>
-                    </motion.a>
+                    </motion.div>
                 ))}
                 {projects_i.map((project, index) => (
-                    <motion.a
+                    <motion.div
                         key={index}
                         href={project.link}
                         target="_blank"
@@ -122,7 +117,7 @@ const Home = () => {
                         <img src={project.image} alt={project.title} className="project-image" />
                         <h2>{project.title}</h2>
                         <p>{project.description}</p>
-                    </motion.a>
+                    </motion.div>
                 ))}
                 </div>
             </div>
