@@ -23,7 +23,7 @@ import docker from './images/docker.png';
 
 const Home = () => {
     const projects_yo = [
-        { title: "Image Generation App", description: "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",image:image_gen,link:'https://imagegen0603-oitzkx0cf-jemans-projects.vercel.app' },
+        { title: "Image Generation App", description: "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",image:image_gen,link:'https://imagegen0603-oitzkx0cf-jemans-projects.vercel.app',username:'Jeman06',password:'Jeman123@'},
         { title: "Wallpaper App", description: "A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using Cloudinary for image hosting. It features JWT authentication for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.",image:Wallpaper_App,link:'https://resplendent-babka-6b85c1.netlify.app/'},
         { title: "Notes App", description: "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",image:Notes_App,link:'https://notes-app-06-03.netlify.app/'},
         { title: "Book Store App", description: "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",image:Book_store,link:'https://book-store-06-03.netlify.app/'},
@@ -102,8 +102,8 @@ const Home = () => {
                         <h2>{project.title}</h2>
                         <p>{project.description}</p>
                         <div className="credentials">
-                        <p><strong>Username:</strong> Jeman06</p>
-                        <p><strong>Password:</strong> Jeman123@</p>
+                        {project.username ? <p><strong>Username:</strong> {project.username}</p> : ''}
+                        {project.password ? <p><strong>Password:</strong> {project.password}</p> : ''}
                         </div>
                     </motion.a>
                 ))}
