@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import output from './videos/output.webm';
 import image_gen from './images/image_gen.png';
 import Wallpaper_App from './images/Wallpaper_App.png';
 import Notes_App from './images/Notes_App.png';
@@ -22,6 +23,12 @@ import graphql from './images/graphql-icon.png';
 import docker from './images/docker.png';
 
 const Home = () => {
+    const refurb      = {
+        title : "RefurbStore",
+        description : "This is an E-Commerce app to sell renewed smartphones. It Uses JWT Authentication and OAuth. It also has a ChatBot that uses 'xenoware/transformers' to convert plain-text to vectors and PineCone to querying & storing vectors.",
+        video : output,
+        link : 'https://github.com/Jeman-Kumar-97-06/E-Commerce_App_Refurbished_Phones',
+    }
     const projects_yo = [
         { title: "Image Generation App", 
           description: "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",
@@ -115,10 +122,42 @@ const Home = () => {
 
             <div className='portfolio_mern'>
                 <h3>Projects.</h3>
+                <div className='refurb_proj'>
+                <motion.div
+                    className="project-card"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                >
+                    <div className="video-wrapper">
+                        <video
+                            src={refurb.video}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="project-video"
+                            />
+                    </div>
+                    <h2 className="project-title">{refurb.title}</h2>
+                    <p className="project-description">{refurb.description}</p>
+                    <div className="project-links">
+                        <a
+                            href={refurb.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="github-link"
+                        >
+                        🔗 View Code
+                        </a>
+                    </div>
+                </motion.div>
+                </div>
                 <div className="projects-container">
+                
                 {projects_yo.map((project, index) => (
                     <motion.div
-                        key={index}
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
