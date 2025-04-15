@@ -138,7 +138,18 @@ const Home = () => {
                             muted
                             playsInline
                             className="project-video"
+                            onClick={(e) => {
+                                const video = e.currentTarget;
+                                if (video.requestFullscreen) {
+                                  video.requestFullscreen();
+                                } else if (video.webkitRequestFullscreen) {
+                                  video.webkitRequestFullscreen();
+                                } else if (video.msRequestFullscreen) {
+                                  video.msRequestFullscreen();
+                                }
+                              }}
                             />
+                        <div className="tooltip" style={{'color':'red'}}>Click anywhere on the video for fullscreen</div>
                     </div>
                     <h2 className="project-title">{refurb.title}</h2>
                     <p className="project-description">{refurb.description}</p>
