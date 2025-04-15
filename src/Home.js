@@ -33,8 +33,8 @@ const Home = () => {
         { title: "Image Generation App", 
           description: "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",
           image:image_gen,
-          link:'https://imagegen0603-egt0qv5yn-jemans-projects.vercel.app/',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/ImageGenApp',
+          link:'https://imagepiggen.vercel.app/',
+          gitlink:'https://github.com/Jeman-Kumar-97-06/Image_Generation_App',
           username:'Jeman06',
           password:'Jeman123@'},
         { title: "Wallpaper App", 
@@ -124,7 +124,7 @@ const Home = () => {
                 <h3>Projects.</h3>
                 <div className='refurb_proj'>
                 <motion.div
-                    className="project-card"
+                    className="project-card spec"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}

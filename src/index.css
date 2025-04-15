@@ -361,6 +361,13 @@ h4{
     width: 100%;
   }
 
+  .refurb_proj{
+    width : 100%;
+    .project-card{
+      width:90%;
+    }
+  }
+
   .top_div{
     flex-direction: column;
     margin-top: 50px;
