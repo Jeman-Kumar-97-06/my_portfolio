@@ -25,6 +25,24 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Jeman's Portfolio</title>
+    <style>
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: black;
+        cursor : crosshair;
+      }
+      .dot {
+        width: 5px;
+        height: 5px;
+        background: rgb(247, 3, 3);
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +57,41 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      const dots = [];
+      const cursor = {
+        x: 0,
+        y: 0,
+      };
+
+      for (let i = 0; i < 10; i++) {
+        const dot = document.createElement("div");
+        dot.className = "dot";
+        document.body.appendChild(dot);
+        dots.push(dot);
+      }
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.x = e.clientX + window.scrollX;
+        cursor.y = e.clientY + window.scrollY;
+      });
+
+      function draw() {
+        let x = cursor.x;
+        let y = cursor.y;
+
+        dots.forEach((dot, index) => {
+          const nextDot = dots[index + 1] || dots[0];
+
+          dot.style.left = x + "px";
+          dot.style.top = y + "px";
+
+          x += (nextDot.offsetLeft - dot.offsetLeft) * 0.5;
+          y += (nextDot.offsetTop - dot.offsetTop) * 0.5;
+        });
+      }
+
+      setInterval(draw, 10);
+    </script>
   </body>
 </html>
