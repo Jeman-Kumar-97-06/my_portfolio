@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import output from './videos/output.webm';
-import image_gen from './images/image_gen.png';
-import Wallpaper_App from './images/Wallpaper_App.png';
-import Notes_App from './images/Notes_App.png';
-import Book_store from './images/Book_store.png';
-import CodeAnalyser from './images/CodeAnalyser.png';
+import refurbished from './videos/refurbished.webm';
+import bookapp from './videos/bookApp.webm';
+import codeapp from './videos/CodeAApp.webm';
+import notesapp from './videos/Notesapp.webm';
+import imagegen from './videos/ImageGenapp.webm';
+import wallpaperapp from './videos/wallpaperapp.webm';
 import Chat_App from './images/Chat_App.png';
 import To_Do_List from './images/To_Do_List.png';
 import WorkoutTracker from './images/WorkoutTracker.png';
@@ -23,41 +23,53 @@ import graphql from './images/graphql-icon.png';
 import docker from './images/docker.png';
 
 const Home = () => {
-    const refurb      = {
+    //projects with video
+    const vid_projects      = [
+    {
         title : "RefurbStore",
         description : "This is an E-Commerce app to sell renewed smartphones. It Uses JWT Authentication and OAuth. It also has a ChatBot that uses 'xenoware/transformers' to convert plain-text to vectors and PineCone to querying & storing vectors.",
-        video : output,
-        link : 'https://github.com/Jeman-Kumar-97-06/E-Commerce_App_Refurbished_Phones',
-    }
+        video : refurbished,
+        link  : '',
+        gitlink : 'https://github.com/Jeman-Kumar-97-06/E-Commerce_App_Refurbished_Phones',
+    },
+    {
+        title: "Image Generation App",
+        description : "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",
+        video : imagegen,
+        link  : 'https://imagepiggen.vercel.app/',
+        gitlink : 'https://github.com/Jeman-Kumar-97-06/Image_Generation_App'
+    },
+    {
+        title : "Wallpaper App",
+        description : "A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using Cloudinary for image hosting. It features JWT authentication for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.",
+        video:wallpaperapp,
+        link  : 'https://resplendent-babka-6b85c1.netlify.app/',
+        gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/WallpaperApp'
+    },
+    {
+        title : "Code Analyser App",
+        description : "A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using Gemini AI. It features a separate tab where users can paste coding problems and request AI-generated solutions. The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.",
+        video : codeapp,
+        link  : 'https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/',
+        gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/CodeAnalyzer'
+    },
+    {
+        title : "Book Store App",
+        description : "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",
+        video: bookapp,
+        link  : 'https://book-store-06-03.netlify.app/',
+        gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/E-Commerce'
+    },
+    {
+        title : "Notes App",
+        description : "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",
+        video: notesapp,
+        link  : 'https://notes-app-06-03.netlify.app/',
+        gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Notes_app'
+    }   
+    ]
+    //Projects with image:
     const projects_yo = [
-        { title: "Image Generation App", 
-          description: "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",
-          image:image_gen,
-          link:'https://imagepiggen.vercel.app/',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/Image_Generation_App',
-          username:'Jeman06',
-          password:'Jeman123@'},
-        { title: "Wallpaper App", 
-          description: "A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using Cloudinary for image hosting. It features JWT authentication for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.",
-          image:Wallpaper_App,
-          link:'https://resplendent-babka-6b85c1.netlify.app/',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/WallpaperApp',},
-          
-        { title: "Notes App", 
-          description: "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",
-          image:Notes_App,
-          link:'https://notes-app-06-03.netlify.app/',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Notes_app',},
-        { title: "Book Store App", 
-          description: "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",
-          image:Book_store,
-          link:'https://book-store-06-03.netlify.app/',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/E-Commerce',},
-        { title: "Code Analyzer App", 
-          description: "A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using Gemini AI. It features a separate tab where users can paste coding problems and request AI-generated solutions. The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.",
-          image:CodeAnalyser,
-          link:'https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/CodeAnalyzer',},
         { title: "To-Do List App",
           description: "A simple and efficient to-do list application with MongoDB for persistent storage. Users can add, edit, delete, and mark tasks as completed, ensuring easy task management. Features JWT authentication for secure access.",
           image:To_Do_List,
@@ -122,7 +134,8 @@ const Home = () => {
 
             <div className='portfolio_mern'>
                 <h3>Projects.</h3>
-                <div className='refurb_proj'>
+                <div className='projects-container'>
+                {vid_projects.map((refurb)=><div className='refurb_proj'>
                 <motion.div
                     className="project-card spec"
                     initial={{ opacity: 0, y: 30 }}
@@ -152,21 +165,17 @@ const Home = () => {
                         <div className="tooltip" style={{'color':'red'}}>Click anywhere on the video for fullscreen</div>
                     </div>
                     <h2 className="project-title">{refurb.title}</h2>
-                    <p className="project-description">{refurb.description}</p>
-                    <div className="project-links">
-                        <a
-                            href={refurb.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="github-link"
-                        >
-                        🔗 View Code
-                        </a>
+                    <p className="project-description"><strong>{refurb.description}</strong></p>
+                    <div class="project-links">
+                            {refurb.link.length>1 ? <><a href={refurb.link} rel='noreferrer' target="_blank">🔗 Live</a> | </> : <span>{""}</span>}  
+                            <a href={refurb.gitlink} rel='noreferrer' target="_blank">💻 Code</a>
                     </div>
                 </motion.div>
+                </div>)}
                 </div>
-                <div className="projects-container">
-                
+
+                {/* All Projects: */}
+                <div className="projects-container">                
                 {projects_yo.map((project, index) => (
                     <motion.div
                         href={project.link}
@@ -180,7 +189,7 @@ const Home = () => {
                     >
                         <img src={project.image} alt={project.title} className="project-image" />
                         <h2>{project.title}</h2>
-                        <p>{project.description}</p>
+                        <p><strong>{project.description}</strong></p>
                         <div class="project-links">
                             {project.link.length>1 ? <><a href={project.link} rel='noreferrer' target="_blank">🔗 Live</a> | </> : <p>{"Not Deployed Yet"}</p>}  
                             <a href={project.gitlink} rel='noreferrer' target="_blank">💻 Code</a>

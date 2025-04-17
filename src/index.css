@@ -4,9 +4,10 @@
 .refurb_proj {
   margin-bottom: 50px;
   .project-card {
-    background-color: #fff;
+    background-color: #FFF8F8;
     border-radius: 0px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
     padding: 20px;
     width: 500px;
     max-width: 600px;
@@ -38,7 +39,7 @@
   
   .project-links {
     margin-top: 16px;
-    text-align: right;
+    text-align: center;
   }
   
   .github-link {
@@ -62,9 +63,9 @@
 
 .project-card {
   width: calc(50% - 20px);
-  max-width: 600px;
+  max-width: 500px;
   padding: 20px;
-  background: white;
+  background: #FFF8F8;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 0px;
   text-align: center;
