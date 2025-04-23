@@ -27,28 +27,28 @@ const Home = () => {
     const vid_projects      = [
     {
         title : "RefurbStore",
-        description : "This is an E-Commerce app to sell renewed smartphones. It Uses JWT Authentication and OAuth. It also has a ChatBot that uses 'xenoware/transformers' to convert plain-text to vectors and PineCone to querying & storing vectors.",
+        description : `This is an <strong>E-Commerce app</strong> to sell renewed smartphones. It Uses <strong>JWT Authentication</strong> and <strong> Google OAuth</strong>. It also has a <strong>ChatBot</strong> that uses <strong>'xenoware/transformers'</strong> to convert plain-text to vectors and <strong>PineCone</strong> to querying & storing vectors.`,
         video : refurbished,
         link  : '',
         gitlink : 'https://github.com/Jeman-Kumar-97-06/E-Commerce_App_Refurbished_Phones',
     },
     {
         title: "Image Generation App",
-        description : "This application leverages the ImagePig API to generate images based on user-provided prompts. It seamlessly integrates Cloudinary for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",
+        description : "This application leverages the <strong>ImagePig</strong> API to generate images based on user-provided prompts. It seamlessly integrates <strong>Cloudinary</strong> for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",
         video : imagegen,
         link  : 'https://imagepiggen.vercel.app/',
         gitlink : 'https://github.com/Jeman-Kumar-97-06/Image_Generation_App'
     },
     {
         title : "Wallpaper App",
-        description : "A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using Cloudinary for image hosting. It features JWT authentication for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.",
+        description : "A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using <strong>Cloudinary</strong> for image hosting. It features <strong>JWT authentication</strong> for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.",
         video:wallpaperapp,
         link  : 'https://resplendent-babka-6b85c1.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/WallpaperApp'
     },
     {
         title : "Code Analyser App",
-        description : "A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using Gemini AI. It features a separate tab where users can paste coding problems and request AI-generated solutions. The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.",
+        description : "A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using <strong>Gemini AI</strong>. It features a separate tab where users can paste coding problems and request AI-generated solutions. The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.",
         video : codeapp,
         link  : 'https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/CodeAnalyzer'
@@ -165,7 +165,7 @@ const Home = () => {
                         <div className="tooltip" style={{'color':'red'}}>Click anywhere on the video for fullscreen</div>
                     </div>
                     <h2 className="project-title">{refurb.title}</h2>
-                    <p className="project-description"><strong>{refurb.description}</strong></p>
+                    <p className="project-description"><strong dangerouslySetInnerHTML={{__html:refurb.description}} /></p>
                     <div class="project-links">
                             {refurb.link.length>1 ? <><a href={refurb.link} rel='noreferrer' target="_blank">🔗 Live</a> | </> : <span>{""}</span>}  
                             <a href={refurb.gitlink} rel='noreferrer' target="_blank">💻 Code</a>
