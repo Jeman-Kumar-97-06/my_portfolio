@@ -26,8 +26,8 @@ const Home = () => {
     //projects with video
     const vid_projects      = [
     {
-        title : "RefurbStore",
-        description : `This is an <strong>E-Commerce app</strong> to sell renewed smartphones. It Uses <strong>JWT Authentication</strong> and <strong> Google OAuth</strong>. It also has a <strong>ChatBot</strong> that uses <strong>'xenoware/transformers'</strong> to convert plain-text to vectors and <strong>PineCone</strong> to querying & storing vectors.`,
+        title : "RefurbStore [With a chatbot]",
+        description : `This is an <strong>E-Commerce app</strong> to sell renewed smartphones. It Uses <strong>JWT Authentication</strong> and <strong> Google OAuth</strong>. It also has a <strong>ChatBot</strong> that uses <strong>'@xenova/transformers'</strong> to convert plain-text to vectors and <strong>PineCone</strong> to querying & storing vectors.`,
         video : refurbished,
         link  : '',
         gitlink : 'https://github.com/Jeman-Kumar-97-06/E-Commerce_App_Refurbished_Phones',
