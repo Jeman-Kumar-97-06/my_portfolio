@@ -31,7 +31,7 @@
         margin: 0;
         padding: 0;
         background: black;
-        cursor : crosshair;
+        cursor : none;
       }
       .dot {
         width: 5px;
@@ -42,9 +42,20 @@
         pointer-events: none;
         transform: translate(-50%, -50%);
       }
+      .custom-cursor {
+      width: 15px;
+      height: 15px;
+      background-color: orangered;
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    } 
     </style>
   </head>
   <body>
+    <div class="custom-cursor" id="cursor"></div>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -58,6 +69,12 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
+      const cursorsh = document.getElementById('cursor');
+
+window.addEventListener('mousemove', (e) => {
+  cursorsh.style.left = e.clientX + 'px';
+  cursorsh.style.top = e.clientY + 'px';
+});
       const dots = [];
       const cursor = {
         x: 0,
