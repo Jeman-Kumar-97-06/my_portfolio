@@ -21,6 +21,7 @@ import linux from './images/linux.png';
 import aws from './images/aws.png';
 import graphql from './images/graphql-icon.png';
 import docker from './images/docker.png';
+import typescript from './images/typescript.png';
 
 const Home = () => {
     //projects with video
@@ -118,6 +119,7 @@ const Home = () => {
                     <img src={html5} alt='html5' width="50" height="50"/>
                     <img src={css3} alt='css3' width="50" height="50"/>
                     <img src={javascript} alt='js' width="50" height="50"/>
+                    <img src={typescript} alt='ts' width="50" height="50"/>
                     <img src={nodejs} alt='nodejs' width="50" height="50"/>
                     <img src={react} alt='reactjs' width="50" height="50"/>
                     <img src={mongodb} alt='mongodb' width="50" height="50"/>
