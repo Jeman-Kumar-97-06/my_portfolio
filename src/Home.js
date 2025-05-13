@@ -22,48 +22,49 @@ import aws from './images/aws.png';
 import graphql from './images/graphql-icon.png';
 import docker from './images/docker.png';
 import typescript from './images/typescript.png';
+import python from './images/python.png';
 
 const Home = () => {
     //projects with video
     const vid_projects      = [
     {
         title : "RefurbStore [With a chatbot]",
-        description : `This is an <strong>E-Commerce app</strong> to sell renewed smartphones. It Uses <strong>JWT Authentication</strong> and <strong> Google OAuth</strong>. It also has a <strong>ChatBot</strong> that uses <strong>'@xenova/transformers'</strong> to convert plain-text to vectors and <strong>PineCone</strong> to querying & storing vectors.`,
+        description : `<ul><li>This is an <strong>E-Commerce app</strong> to sell renewed smartphones.</li><li>It Uses <strong>JWT Authentication</strong> and <strong> Google OAuth</strong>.</li><li>It also has a <strong>ChatBot</strong> that uses <strong>'@xenova/transformers'</strong> to convert plain-text to vectors and <strong>PineCone</strong> to querying & storing vectors.</li></ul>`,
         video : refurbished,
         link  : '',
         gitlink : 'https://github.com/Jeman-Kumar-97-06/E-Commerce_App_Refurbished_Phones',
     },
     {
         title: "Image Generation App",
-        description : "This application leverages the <strong>ImagePig</strong> API to generate images based on user-provided prompts. It seamlessly integrates <strong>Cloudinary</strong> for secure storage, allowing registered users to save and access their generated images anytime—eliminating the need for repeated generation.",
+        description : "<ul><li>The Application uses the <strong>ImagePig API</strong> to generate images from user-provided prompts.</li><li><strong>Cloudinary</strong> is integrated for secure image storage.</li><li><strong>Registered Users</strong> can save their generated images.</li><li>Users can <strong>access previously generated images anytime,</strong> avoiding the need to regenerate them.</li></ul>",
         video : imagegen,
         link  : 'https://imagepiggen.vercel.app/',
         gitlink : 'https://github.com/Jeman-Kumar-97-06/Image_Generation_App'
     },
     {
         title : "Wallpaper App",
-        description : "A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using <strong>Cloudinary</strong> for image hosting. It features <strong>JWT authentication</strong> for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.",
+        description : "<ul><li>A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using <strong>Cloudinary</strong> for image hosting.</li><li>It features <strong>JWT authentication</strong> for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.</li></ul>",
         video:wallpaperapp,
         link  : 'https://resplendent-babka-6b85c1.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/WallpaperApp'
     },
     {
         title : "Code Analyser App",
-        description : "A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using <strong>Gemini AI</strong>. It features a separate tab where users can paste coding problems and request AI-generated solutions. The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.",
+        description : "<ul><li>A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using <strong>Gemini AI</strong>.</li><li>It features a separate tab where users can paste coding problems and request AI-generated solutions.</li><li>The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.</li></ul>",
         video : codeapp,
         link  : 'https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/CodeAnalyzer'
     },
     {
         title : "Book Store App",
-        description : "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",
+        description : "<ul><li>A full-stack MERN bookstore app featuring JWT authentication for secure user access.</li><li>It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.</li></ul>",
         video: bookapp,
         link  : 'https://book-store-06-03.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/E-Commerce'
     },
     {
         title : "Notes App",
-        description : "A full-stack MERN bookstore app featuring JWT authentication for secure user access. It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.",
+        description : "<ul><li>A full-stack MERN bookstore app featuring <strong>JWT authentication for secure user access</strong>.</li><li>It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.</li></ul>",
         video: notesapp,
         link  : 'https://notes-app-06-03.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Notes_app'
@@ -72,17 +73,17 @@ const Home = () => {
     //Projects with image:
     const projects_yo = [
         { title: "To-Do List App",
-          description: "A simple and efficient to-do list application with MongoDB for persistent storage. Users can add, edit, delete, and mark tasks as completed, ensuring easy task management. Features JWT authentication for secure access.",
+          description: "<ul><li>A simple and efficient to-do list application with <strong>MongoDB for persistent storage</strong>.</li><li>Users can add, edit, delete, and mark tasks as completed, ensuring easy task management.</li><li>Features JWT authentication for secure access.</li></ul>",
           image:To_Do_List,
           link:'https://to-do-list-06-03.netlify.app/',
           gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/To_Do_List'},
         { title: "Chat App", 
-          description: "This application utilizes Socket.io to establish a real-time, two-way connection for seamless message transmission. It integrates MongoDB to efficiently store and manage messages, ensuring registered users can access their chat history anytime.",
+          description: "<ul><li>This application utilizes <strong>Socket.io</strong> to establish a real-time, two-way connection for seamless message transmission.</li><li>It integrates <strong>MongoDB</strong> to efficiently store and manage messages, ensuring registered users can access their chat history anytime.</li></ul>",
           image:Chat_App,
           link:'',
           gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App',},
         { title: "Workout Tracker App",
-          description : "A fitness-focused CRUD application that helps users log, track, and manage workouts. Users can add exercises, track progress, and update workout details, with MongoDB ensuring data persistence and JWT authentication for secure access.",
+          description : "<ul><li>A fitness-focused CRUD application that helps users log, track, and manage workouts.</li><li>Users can add exercises, track progress, and update workout details, with <strong>MongoDB</strong> ensuring data persistence and <strong>JWT authentication</strong> for secure access.</li></ul>",
           image:WorkoutTracker,
           link:'',
           gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker',}
@@ -129,6 +130,7 @@ const Home = () => {
                     <img src={aws} alt='aws' width="50" height="50"/>
                     <img src={graphql} alt='graphql' width='50' height='50'/>
                     <img src={docker} alt='docker' width='50' height='50'/>
+                    <img src={python} alt='python' width='50' height='50'/>
                 </div>
             </div>
 
@@ -191,7 +193,7 @@ const Home = () => {
                     >
                         <img src={project.image} alt={project.title} className="project-image" />
                         <h2>{project.title}</h2>
-                        <p><strong>{project.description}</strong></p>
+                        <p className="project-description"><strong dangerouslySetInnerHTML={{__html:project.description}} ></strong></p>
                         <div class="project-links">
                             {project.link.length>1 ? <><a href={project.link} rel='noreferrer' target="_blank">🔗 Live</a> | </> : <p>{"Not Deployed Yet"}</p>}  
                             <a href={project.gitlink} rel='noreferrer' target="_blank">💻 Code</a>
@@ -217,7 +219,7 @@ const Home = () => {
             <div className='github_progress'>
                 <h3>Github Stats.</h3>
                 <img className='grade' alt='github status' src="https://github-readme-stats.vercel.app/api?username=Jeman-Kumar-97-06&show_icons=true&theme=dark" />
-                <img className='grind' alt='github streak' src="https://github-readme-streak-stats.herokuapp.com/?user=Jeman-Kumar-97-06&theme=dark" />
+                <img className='grind' alt='alt : github streak' src="https://github-readme-streak-stats.herokuapp.com/?user=Jeman-Kumar-97-06&theme=dark" />
                 <img className='langs' alt='lang_mix'      src="https://github-readme-stats.vercel.app/api/top-langs/?username=Jeman-Kumar-97-06&layout=compact&theme=dark" />
             </div>  
             
