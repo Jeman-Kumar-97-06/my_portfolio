@@ -104,6 +104,8 @@ const Home = () => {
         
         getLeetCodeStats("Jeman_Kumar_97");
     },[])
+
+    //Return Statement:
     return (
         <div className='home_page'>
             <div className='top_div'>
