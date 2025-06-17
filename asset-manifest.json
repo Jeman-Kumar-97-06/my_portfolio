@@ -1,23 +1,19 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.c756aaca.css",
-    "main.js": "/my_portfolio/static/js/main.93b60506.js",
+    "main.css": "/my_portfolio/static/css/main.3bddac4a.css",
+    "main.js": "/my_portfolio/static/js/main.cb7e7fa8.js",
     "static/media/refurbished.webm": "/my_portfolio/static/media/refurbished.b941b8fdd56ffe150fec.webm",
-    "static/media/wallpaperapp.webm": "/my_portfolio/static/media/wallpaperapp.f86e3f91f847cc524c40.webm",
     "static/media/Notesapp.webm": "/my_portfolio/static/media/Notesapp.72046e59a87b1b2ea28e.webm",
-    "static/media/CodeAApp.webm": "/my_portfolio/static/media/CodeAApp.de992700271b1cecceda.webm",
-    "static/media/bookApp.webm": "/my_portfolio/static/media/bookApp.319d7267ab5a33eeb3b8.webm",
     "static/media/ImageGenapp.webm": "/my_portfolio/static/media/ImageGenapp.13be49d9a341a5aa5cb1.webm",
     "static/media/WorkoutTracker.png": "/my_portfolio/static/media/WorkoutTracker.e7f848344ba65bf1b88a.png",
-    "static/media/Chat_App.png": "/my_portfolio/static/media/Chat_App.99a8355c18b666aa0276.png",
     "static/media/To_Do_List.png": "/my_portfolio/static/media/To_Do_List.aa45ffae40bf2055616a.png",
     "static/media/linkedin.png": "/my_portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/my_portfolio/index.html",
-    "main.c756aaca.css.map": "/my_portfolio/static/css/main.c756aaca.css.map",
-    "main.93b60506.js.map": "/my_portfolio/static/js/main.93b60506.js.map"
+    "main.3bddac4a.css.map": "/my_portfolio/static/css/main.3bddac4a.css.map",
+    "main.cb7e7fa8.js.map": "/my_portfolio/static/js/main.cb7e7fa8.js.map"
   },
   "entrypoints": [
-    "static/css/main.c756aaca.css",
-    "static/js/main.93b60506.js"
+    "static/css/main.3bddac4a.css",
+    "static/js/main.cb7e7fa8.js"
   ]
 }
