@@ -3,9 +3,10 @@
 
 .refurb_proj {
   margin-bottom: 50px;
+  
   .project-card {
     background-color: #FFF8F8;
-    border-radius: 0px;
+    border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
@@ -76,7 +77,7 @@
   padding: 20px;
   background: #FFF8F8;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 0px;
+  border-radius: 10px;
   text-align: center;
   text-decoration: none;
   color: inherit;

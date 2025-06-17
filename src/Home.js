@@ -1,12 +1,8 @@
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import refurbished from './videos/refurbished.webm';
-import bookapp from './videos/bookApp.webm';
-import codeapp from './videos/CodeAApp.webm';
 import notesapp from './videos/Notesapp.webm';
 import imagegen from './videos/ImageGenapp.webm';
-import wallpaperapp from './videos/wallpaperapp.webm';
-import Chat_App from './images/Chat_App.png';
 import To_Do_List from './images/To_Do_List.png';
 import WorkoutTracker from './images/WorkoutTracker.png';
 import html5 from './images/html-5.png';
@@ -42,27 +38,6 @@ const Home = () => {
         gitlink : 'https://github.com/Jeman-Kumar-97-06/Image_Generation_App'
     },
     {
-        title : "Wallpaper App",
-        description : "<ul><li>A MERN stack wallpaper application that allows users to upload, store, and manage wallpapers using <strong>Cloudinary</strong> for image hosting.</li><li>It features <strong>JWT authentication</strong> for secure access, ensuring that users can save and organize their favorite wallpapers while maintaining privacy.</li></ul>",
-        video:wallpaperapp,
-        link  : 'https://resplendent-babka-6b85c1.netlify.app/',
-        gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/WallpaperApp'
-    },
-    {
-        title : "Code Analyser App",
-        description : "<ul><li>A powerful web-based tool that analyzes code for errors, inefficiencies, and optimizations using <strong>Gemini AI</strong>.</li><li>It features a separate tab where users can paste coding problems and request AI-generated solutions.</li><li>The app provides real-time feedback, making it an essential tool for developers looking to improve code quality and solve programming challenges efficiently.</li></ul>",
-        video : codeapp,
-        link  : 'https://67c49b7bbd18d6a041249fef--stupendous-centaur-979a4d.netlify.app/',
-        gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/CodeAnalyzer'
-    },
-    {
-        title : "Book Store App",
-        description : "<ul><li>A full-stack MERN bookstore app featuring JWT authentication for secure user access.</li><li>It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.</li></ul>",
-        video: bookapp,
-        link  : 'https://book-store-06-03.netlify.app/',
-        gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/E-Commerce'
-    },
-    {
         title : "Notes App",
         description : "<ul><li>A full-stack MERN bookstore app featuring <strong>JWT authentication for secure user access</strong>.</li><li>It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.</li></ul>",
         video: notesapp,
@@ -77,11 +52,6 @@ const Home = () => {
           image:To_Do_List,
           link:'https://to-do-list-06-03.netlify.app/',
           gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/To_Do_List'},
-        { title: "Chat App", 
-          description: "<ul><li>This application utilizes <strong>Socket.io</strong> to establish a real-time, two-way connection for seamless message transmission.</li><li>It integrates <strong>MongoDB</strong> to efficiently store and manage messages, ensuring registered users can access their chat history anytime.</li></ul>",
-          image:Chat_App,
-          link:'',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Chat_App',},
         { title: "Workout Tracker App",
           description : "<ul><li>A fitness-focused CRUD application that helps users log, track, and manage workouts.</li><li>Users can add exercises, track progress, and update workout details, with <strong>MongoDB</strong> ensuring data persistence and <strong>JWT authentication</strong> for secure access.</li></ul>",
           image:WorkoutTracker,
