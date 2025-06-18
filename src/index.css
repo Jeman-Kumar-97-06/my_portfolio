@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Six+Caps&family=Yesteryear&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Six+Caps&display=swap'); */
 
+.project-card {
+  height:600px;
+  padding:20px;
+  box-shadow: 20px 20px 30px gray;
+}
+
+
+
 .refurb_proj {
   margin-bottom: 50px;
   
   .project-card {
     background-color: #FFF8F8;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    
     text-align: center;
-    padding: 20px;
     width: 500px;
     max-width: 600px;
     margin: 0 auto;
@@ -42,6 +49,8 @@
   .project-links {
     margin-top: 16px;
     text-align: center;
+    position: relative;
+    bottom:0;
   }
   
   .github-link {
@@ -74,9 +83,7 @@
 .project-card {
   width: calc(50% - 20px);
   max-width: 500px;
-  padding: 20px;
   background: #FFF8F8;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -87,7 +94,7 @@
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
 }
 
 .project-image {
