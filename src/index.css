@@ -156,10 +156,10 @@
 body{
   /* background-color: #F5F5F5; */
   /* background-image: linear-gradient(to bottom right,#F1F0E9,#9D84B7,#F5EEC8); */
-  background-image: linear-gradient(to right,#77A1D3,#79CBCA,#E684AE);
+  background-image: linear-gradient(to bottom right,#77A1D3,#79CBCA,#E684AE);
   /* background-image: linear-gradient(to right,#b92b27,#1565C0); */
   background-size: 300% 300%;
-  animation: retrobackg 3s infinite alternate-reverse;
+  animation: retrobackg 2s infinite alternate-reverse;
   animation-timing-function: ease-in;
   display:flex;
   flex-direction: column;
