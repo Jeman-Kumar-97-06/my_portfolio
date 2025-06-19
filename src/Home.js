@@ -82,7 +82,12 @@ const Home = () => {
                 <div className='text-container'>
                     <h3 className='name_mine'>Jeman Kumar.</h3>
                 </div>
-                <p>
+                <p style={{
+                        fontFamily : 'Qurova',
+                        fontSize: '16px', // Fits the height of h-32 (~128px) dynamically
+                        lineHeight: '1',
+                        // textShadow: '0 0 5px white, 0 0 15px white',
+                    }}>
                     <span style={{fontSize:"25px",fontWeight:"bold",fontStyle:"italic"}}>"</span>Aspiring <span className='fsd'>Full Stack Developer </span> with a strong <span className='mern-container'><span className='mern'>MERN</span></span> foundation, passionate about building responsive web apps. Enthusiastic problem-solver, always learning new frameworks to stay ahead. Eager to work as a part of a dynamic team.<span style={{fontSize:"25px",fontWeight:"bold",fontStyle:"italic"}}>"</span>
                 </p>
             </div>
@@ -113,6 +118,12 @@ const Home = () => {
                 <div className='projects-container'>
                 {vid_projects.map((refurb)=><div className='refurb_proj'>
                 <motion.div
+                    style={{
+                        fontFamily : 'Qurova',
+                        fontSize: '16px', // Fits the height of h-32 (~128px) dynamically
+                        lineHeight: '1',
+                        // textShadow: '0 0 5px white, 0 0 15px white',
+                    }}
                     className="project-card spec"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +149,7 @@ const Home = () => {
                                 }
                               }}
                             />
-                        <div className="tooltip" style={{'color':'red'}}>Click anywhere on the video for fullscreen</div>
+                        <div className="tooltip" style={{'color':'red','marginTop':'10px'}}>Click anywhere on the video for fullscreen</div>
                     </div>
                     <h2 className="project-title">{refurb.title}</h2>
                     <p className="project-description"><strong dangerouslySetInnerHTML={{__html:refurb.description}} /></p>
@@ -154,6 +165,12 @@ const Home = () => {
                 <div className="projects-container">                
                 {projects_yo.map((project, index) => (
                     <motion.div
+                        style={{
+                        fontFamily : 'Qurova',
+                        fontSize: '16px', // Fits the height of h-32 (~128px) dynamically
+                        lineHeight: '1',
+                        // textShadow: '0 0 5px white, 0 0 15px white',
+                        }}
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"

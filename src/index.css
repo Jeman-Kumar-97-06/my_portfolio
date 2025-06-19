@@ -5,10 +5,15 @@
   height:600px;
   padding:20px;
   box-shadow: 20px 20px 30px gray;
-  background-color: #F8EDED;
+  background-color: #faf9f9;
 }
 
-
+@font-face {
+  font-family:'Qurova';
+  src: url('./assets/fonts/Metropolis-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 .refurb_proj {
   margin-bottom: 50px;
@@ -381,7 +386,7 @@ h4{
 @media only screen and (max-width:920px) {
 
   .project-card {
-    width: 100%;
+    width: 95%;
   }
 
   .refurb_proj{
