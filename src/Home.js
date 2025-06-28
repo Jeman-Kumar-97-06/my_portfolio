@@ -19,6 +19,7 @@ import graphql from './images/graphql-icon.png';
 import docker from './images/docker.png';
 import typescript from './images/typescript.png';
 import python from './images/python.png';
+import backgroundz from './videos/backgroundz.webm';
 
 const Home = () => {
     //projects with video
@@ -29,6 +30,13 @@ const Home = () => {
         video : refurbished,
         link  : '',
         gitlink : 'https://github.com/Jeman-Kumar-97-06/E-Commerce_App_Refurbished_Phones',
+    },
+    {
+        title : "Backgroundz App",
+        description : "<ul><li>Backgroundz is a full-stack wallpaper application that lets users upload, search, categorize, and download high-quality wallpapers.</li><li>Features user authentication via <strong>JWT</strong> and <strong>Google OAuth</strong></li><li>Stores images securely using <strong>Cloudinary</strong>.</li><li>Built with a modern UI using <strong>Tailwind CSS</strong></li><li>Includes dunamic search, category filters, and dowload support</li>",
+        video: backgroundz,
+        link  : 'https://capable-zuccutto-91acf1.netlify.app/',
+        gitlink:'https://github.com/Jeman-Kumar-97-06/'
     },
     {
         title: "Image Generation App",
@@ -43,7 +51,7 @@ const Home = () => {
         video: notesapp,
         link  : 'https://notes-app-06-03.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Notes_app'
-    }   
+    }
     ]
     //Projects with image:
     const projects_yo = [

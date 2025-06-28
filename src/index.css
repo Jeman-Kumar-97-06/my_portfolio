@@ -384,9 +384,14 @@ h4{
 }
 
 @media only screen and (max-width:920px) {
-
+  .projects-container{
+    align-self: center;
+    margin: auto;
+    width: 105%;
+  }
   .project-card {
-    width: 95%;
+    width: 100%;
+    align-self: center;
   }
 
   .refurb_proj{
