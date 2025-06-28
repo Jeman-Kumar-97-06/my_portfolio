@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import refurbished from './videos/refurbished.webm';
 import notesapp from './videos/Notesapp.webm';
-import imagegen from './videos/ImageGenapp.webm';
+import imagegen from './videos/ImageGenApp.webm';
 import To_Do_List from './images/To_Do_List.png';
 import WorkoutTracker from './images/WorkoutTracker.png';
 import html5 from './images/html-5.png';
