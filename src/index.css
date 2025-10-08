@@ -388,14 +388,22 @@ h4{
     align-self: center;
     margin: auto;
     width: 105%;
+    display:flex;
+    justify-content: center;
   }
   .project-card {
     width: 100%;
     align-self: center;
   }
 
+  .project-video{
+    width:100%;
+  }
+
   .refurb_proj{
-    width : 100%;
+    width : 85vw;
+    margin:auto;
+    align-self: center;
     .project-card{
       width:90%;
     }
