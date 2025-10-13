@@ -18,6 +18,7 @@ import docker from './images/docker.png';
 import typescript from './images/typescript.png';
 import python from './images/python.png';
 import backgroundz from './videos/backgroundz.webm';
+import mcp from './images/icons8-mcp-96.png';
 
 const Home = () => {
     //projects with video
@@ -96,9 +97,9 @@ const Home = () => {
                         // textShadow: '0 0 5px white, 0 0 15px white',
                     }}>
                     <span>
-                        &nbsp; &nbsp; &nbsp;I’m a MERN stack developer with hands-on experience in building full-stack applications using MongoDB, Express.js, React, and Node.js. I also work with Docker for containerization, Redis for caching and session management, and have a solid understanding of MCP (Model Context Protocol) for integrating LLM-powered tools into web apps.<br/>
+                        &nbsp; &nbsp; &nbsp;I’m a <u>MERN</u> stack developer with hands-on experience in building full-stack applications using MongoDB, Express.js, React, and Node.js. I also work with Docker for containerization, Redis for caching and session management, and have a solid understanding of <u>MCP (Model Context Protocol)</u> for integrating LLM-powered tools into web apps.<br/>
 
-                        &nbsp; &nbsp; &nbsp;Alongside web development, I’m familiar with Python and C/C++ syntax, which helps me understand system-level concepts and backend logic deeply. I focus on creating efficient, scalable, and maintainable solutions — whether that’s a modern web app, an AI-integrated system, or a backend API.<br/>
+                        &nbsp; &nbsp; &nbsp;Alongside web development, I’m familiar with <u>Python</u> and <u>C/C++ syntax</u> and <u>networking fundamentals</u>, which helps me understand system-level concepts and backend logic deeply. I focus on creating efficient, scalable, and maintainable solutions — whether that’s a modern web app, an AI-integrated system, or a backend API.<br/>
 
                         &nbsp; &nbsp; &nbsp;I’m currently looking for a remote job or freelancing gig where I can contribute to real-world projects, keep learning new technologies, and deliver impactful results.
                     </span>
@@ -121,6 +122,7 @@ const Home = () => {
                     <img src={graphql} alt='graphql' width='50' height='50'/>
                     <img src={docker} alt='docker' width='50' height='50'/>
                     <img src={python} alt='python' width='50' height='50'/>
+                    <img src={mcp} alt='mcp servers' width='50' height='50'/>
                 </div>
             </div>
 
