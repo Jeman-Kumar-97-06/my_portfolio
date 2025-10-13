@@ -198,12 +198,18 @@ body{
 
 .top_div{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 96vw;
+  margin-top:30px;
   margin-left:auto;
   margin-right: auto;
+}
+
+.top_div p{
+  margin-top:60px;
+  width: 80vw;
 }
 
 .text-container {
@@ -211,7 +217,7 @@ body{
       border-color: black;
       border-width:0.5px;
       width: 400px;
-      height: 30px;
+      height: 20px;
       background-image: linear-gradient(to bottom right, rgba(143,209,79,0.5),rgba(255,102,0,0.5),rgba(67,53,167,0.5));
       background-size: 200% 200%;
       animation: retrobackg 2s infinite alternate;
@@ -223,7 +229,7 @@ body{
 }
 
 .name_mine{
-  font-size: 60px; /* Text is much larger than the div */
+  font-size: 65px; /* Text is much larger than the div */
   line-height: 1;   /* Ensures text does not adjust based on line height */
   /* color: rgb(24, 20, 20); */
   /* font-family: "Yesteryear", cursive; */
@@ -286,11 +292,7 @@ h4{
   font-style: italic;
 }
 
-.top_div p{
-  width: 600px;
-  text-align: right;
-  line-height: 28px;
-}
+
 
 .fsd{
   font-family: "Yesteryear", cursive;
@@ -422,21 +424,10 @@ h4{
     }
   }
 
-  .top_div{
-    flex-direction: column;
-    margin-top: 50px;
-  }
   .fsd{
     font-size: 17px;
   }
-  .top_div p{
-    margin-top: 50px;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-size: 13px;
-  }
+  
   .skill_list img{
     margin:15px;
   }

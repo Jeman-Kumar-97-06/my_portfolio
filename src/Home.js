@@ -53,19 +53,20 @@ const Home = () => {
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Notes_app'
     }
     ]
+    
     //Projects with image:
-    const projects_yo = [
-        { title: "To-Do List App",
-          description: "<ul><li>A simple and efficient to-do list application with <u>MongoDB for persistent storage</u>.</li><li>Users can add, edit, delete, and mark tasks as completed, ensuring easy task management.</li><li>Features JWT authentication for secure access.</li></ul>",
-          image:To_Do_List,
-          link:'https://to-do-list-06-03.netlify.app/',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/To_Do_List'},
-        { title: "Workout Tracker App",
-          description : "<ul><li>A fitness-focused CRUD application that helps users log, track, and manage workouts.</li><li>Users can add exercises, track progress, and update workout details, with <u>MongoDB</u> ensuring data persistence and <u>JWT authentication</u> for secure access.</li></ul>",
-          image:WorkoutTracker,
-          link:'',
-          gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker',}
-      ];
+    // const projects_yo = [
+    //     { title: "To-Do List App",
+    //       description: "<ul><li>A simple and efficient to-do list application with <u>MongoDB for persistent storage</u>.</li><li>Users can add, edit, delete, and mark tasks as completed, ensuring easy task management.</li><li>Features JWT authentication for secure access.</li></ul>",
+    //       image:To_Do_List,
+    //       link:'https://to-do-list-06-03.netlify.app/',
+    //       gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/To_Do_List'},
+    //     { title: "Workout Tracker App",
+    //       description : "<ul><li>A fitness-focused CRUD application that helps users log, track, and manage workouts.</li><li>Users can add exercises, track progress, and update workout details, with <u>MongoDB</u> ensuring data persistence and <u>JWT authentication</u> for secure access.</li></ul>",
+    //       image:WorkoutTracker,
+    //       link:'',
+    //       gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker',}
+    //   ];
 
     useEffect(()=>{
         async function getLeetCodeStats(username) {
@@ -92,11 +93,17 @@ const Home = () => {
                 </div>
                 <p style={{
                         fontFamily : 'Caviar',
-                        fontSize: '16px', // Fits the height of h-32 (~128px) dynamically
+                        fontSize: '20px', // Fits the height of h-32 (~128px) dynamically
                         lineHeight: '1',
                         // textShadow: '0 0 5px white, 0 0 15px white',
                     }}>
-                    <span style={{fontSize:"25px",fontWeight:"bold",fontStyle:"italic"}}>"</span>Aspiring <span className='fsd'>Full Stack Developer </span> with a strong <span className='mern-container'><span className='mern'>MERN</span></span> foundation, passionate about building responsive web apps. Enthusiastic problem-solver, always learning new frameworks to stay ahead. Eager to work as a part of a dynamic team.<span style={{fontSize:"25px",fontWeight:"bold",fontStyle:"italic"}}>"</span>
+                    <span>
+                        &nbsp; &nbsp; &nbsp;I’m a MERN stack developer with hands-on experience in building full-stack applications using MongoDB, Express.js, React, and Node.js. I also work with Docker for containerization, Redis for caching and session management, and have a solid understanding of MCP (Model Context Protocol) for integrating LLM-powered tools into web apps.<br/>
+
+                        &nbsp; &nbsp; &nbsp;Alongside web development, I’m familiar with Python and C/C++ syntax, which helps me understand system-level concepts and backend logic deeply. I focus on creating efficient, scalable, and maintainable solutions — whether that’s a modern web app, an AI-integrated system, or a backend API.<br/>
+
+                        &nbsp; &nbsp; &nbsp;I’m currently looking for a remote job or freelancing gig where I can contribute to real-world projects, keep learning new technologies, and deliver impactful results.
+                    </span>
                 </p>
             </div>
             <div className='skills'>
@@ -169,39 +176,7 @@ const Home = () => {
                 </div>)}
                 </div>
 
-                {/* All Projects: */}
-                <div className="projects-container">                
-                {projects_yo.map((project, index) => (
-                    <motion.div
-                        style={{
-                        fontFamily : 'Caviar',
-                        fontSize: '16px', // Fits the height of h-32 (~128px) dynamically
-                        lineHeight: '1',
-                        // textShadow: '0 0 5px white, 0 0 15px white',
-                        }}
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-card"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                        viewport={{ once: true }}
-                    >
-                        <img src={project.image} alt={project.title} className="project-image" />
-                        <h2>{project.title}</h2>
-                        <p className="project-description"><strong dangerouslySetInnerHTML={{__html:project.description}} ></strong></p>
-                        <div class="project-links">
-                            {project.link.length>1 ? <><a href={project.link} rel='noreferrer' target="_blank">🔗 Live</a> | </> : <p>{"Not Deployed Yet"}</p>}  
-                            <a href={project.gitlink} rel='noreferrer' target="_blank">💻 Code</a>
-                        </div>
-                        <div className="credentials">
-                        {project.username ? <p><strong>Username:</strong> {project.username}</p> : ''}
-                        {project.password ? <p><strong>Password:</strong> {project.password}</p> : ''}
-                        </div>
-                    </motion.div>
-                ))}
-                </div>
+                
             </div>
             
             <div className='links'>
