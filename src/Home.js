@@ -26,28 +26,28 @@ const Home = () => {
     const vid_projects      = [
     {
         title : "RefurbStore [With a chatbot]",
-        description : `<ul><li>This is an <strong>E-Commerce app</strong> to sell renewed smartphones.</li><li>It Uses <strong>JWT Authentication</strong> and <strong> Google OAuth</strong>.</li><li>It also has a <strong>ChatBot</strong> that uses <strong>'@xenova/transformers'</strong> to convert plain-text to vectors and <strong>PineCone</strong> to querying & storing vectors.</li></ul>`,
+        description : `<ul><li>This is an <u>E-Commerce app</u> to sell renewed smartphones.</li><li>It Uses <u>JWT Authentication</u> and <u> Google OAuth</u>.</li><li>It also has a <u>ChatBot</u> that uses <u>'@xenova/transformers'</u> to convert plain-text to vectors and <u>PineCone</u> to querying & storing vectors.</li></ul>`,
         video : refurbished,
         link  : '',
         gitlink : 'https://github.com/Jeman-Kumar-97-06/E-Commerce_App_Refurbished_Phones',
     },
     {
         title : "Backgroundz App",
-        description : "<ul><li>Backgroundz is a full-stack wallpaper application that lets users upload, search, categorize, and download high-quality wallpapers.</li><li>Features user authentication via <strong>JWT</strong> and <strong>Google OAuth</strong></li><li>Stores images securely using <strong>Cloudinary</strong>.</li><li>Built with a modern UI using <strong>Tailwind CSS</strong></li><li>Includes dunamic search, category filters, and dowload support</li>",
+        description : "<ul><li>Backgroundz is a full-stack wallpaper application that lets users upload, search, categorize, and download high-quality wallpapers.</li><li>Features user authentication via <u>JWT</u> and <u>Google OAuth</u></li><li>Stores images securely using <u>Cloudinary</u>.</li><li>Built with a modern UI using <u>Tailwind CSS</u></li><li>Includes dunamic search, category filters, and dowload support</li>",
         video: backgroundz,
         link  : 'https://capable-zuccutto-91acf1.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/'
     },
     {
         title: "Image Generation App",
-        description : "<ul><li>The Application uses the <strong>ImagePig API</strong> to generate images from user-provided prompts.</li><li><strong>Cloudinary</strong> is integrated for secure image storage.</li><li><strong>Registered Users</strong> can save their generated images.</li><li>Users can <strong>access previously generated images anytime,</strong> avoiding the need to regenerate them.</li></ul>",
+        description : "<ul><li>The Application uses the <u>ImagePig API</u> to generate images from user-provided prompts.</li><li><u>Cloudinary</u> is integrated for secure image storage.</li><li><u>Registered Users</u> can save their generated images.</li><li>Users can <u>access previously generated images anytime,</u> avoiding the need to regenerate them.</li></ul>",
         video : imagegen,
         link  : 'https://imagepiggen.vercel.app/',
         gitlink : 'https://github.com/Jeman-Kumar-97-06/Image_Generation_App'
     },
     {
         title : "Notes App",
-        description : "<ul><li>A full-stack MERN bookstore app featuring <strong>JWT authentication for secure user access</strong>.</li><li>It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.</li></ul>",
+        description : "<ul><li>A full-stack MERN bookstore app featuring <u>JWT authentication for secure user access</u>.</li><li>It includes a cart system for managing book purchases and a dynamic book listing page with Framer Motion animations for a smooth and interactive UI.</li></ul>",
         video: notesapp,
         link  : 'https://notes-app-06-03.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Notes_app'
@@ -56,12 +56,12 @@ const Home = () => {
     //Projects with image:
     const projects_yo = [
         { title: "To-Do List App",
-          description: "<ul><li>A simple and efficient to-do list application with <strong>MongoDB for persistent storage</strong>.</li><li>Users can add, edit, delete, and mark tasks as completed, ensuring easy task management.</li><li>Features JWT authentication for secure access.</li></ul>",
+          description: "<ul><li>A simple and efficient to-do list application with <u>MongoDB for persistent storage</u>.</li><li>Users can add, edit, delete, and mark tasks as completed, ensuring easy task management.</li><li>Features JWT authentication for secure access.</li></ul>",
           image:To_Do_List,
           link:'https://to-do-list-06-03.netlify.app/',
           gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/To_Do_List'},
         { title: "Workout Tracker App",
-          description : "<ul><li>A fitness-focused CRUD application that helps users log, track, and manage workouts.</li><li>Users can add exercises, track progress, and update workout details, with <strong>MongoDB</strong> ensuring data persistence and <strong>JWT authentication</strong> for secure access.</li></ul>",
+          description : "<ul><li>A fitness-focused CRUD application that helps users log, track, and manage workouts.</li><li>Users can add exercises, track progress, and update workout details, with <u>MongoDB</u> ensuring data persistence and <u>JWT authentication</u> for secure access.</li></ul>",
           image:WorkoutTracker,
           link:'',
           gitlink:'https://github.com/Jeman-Kumar-97-06/MY_Projects/tree/main/MERN_Stack_Apps/Workout_Tracker',}
@@ -91,7 +91,7 @@ const Home = () => {
                     <h3 className='name_mine'>Jeman Kumar.</h3>
                 </div>
                 <p style={{
-                        fontFamily : 'Qurova',
+                        fontFamily : 'Caviar',
                         fontSize: '16px', // Fits the height of h-32 (~128px) dynamically
                         lineHeight: '1',
                         // textShadow: '0 0 5px white, 0 0 15px white',
@@ -127,7 +127,7 @@ const Home = () => {
                 {vid_projects.map((refurb)=><div className='refurb_proj'>
                 <motion.div
                     style={{
-                        fontFamily : 'Qurova',
+                        fontFamily : 'Caviar',
                         fontSize: '16px', // Fits the height of h-32 (~128px) dynamically
                         lineHeight: '1',
                         // textShadow: '0 0 5px white, 0 0 15px white',
@@ -174,7 +174,7 @@ const Home = () => {
                 {projects_yo.map((project, index) => (
                     <motion.div
                         style={{
-                        fontFamily : 'Qurova',
+                        fontFamily : 'Caviar',
                         fontSize: '16px', // Fits the height of h-32 (~128px) dynamically
                         lineHeight: '1',
                         // textShadow: '0 0 5px white, 0 0 15px white',

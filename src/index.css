@@ -12,6 +12,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CaviarBItalic';
+  src: url('./assets/fonts/CaviarDreams_BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'CaviarItalic';
+  src: url('./assets/fonts/CaviarDreams_Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Caviar';
+  src: url('./assets/fonts/CaviarDreams_Bold.ttf');
+  font-size: 50px;
+}
+
 .refurb_proj {
   margin-bottom: 50px;
   
@@ -170,7 +186,7 @@ body{
   width:100%;
   margin:0;
   padding:0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Caviar";
   font-optical-sizing: auto;
   font-weight: lighter;
   font-style: normal;
@@ -190,7 +206,7 @@ body{
   margin-right: auto;
 }
 
-.text-container {      
+.text-container {
       border-style: solid;
       border-color: black;
       border-width:0.5px;
@@ -235,11 +251,10 @@ body{
 }
 
 
-
 .make_head,h3{
   text-decoration: none;
   color:black;
-  font-family: "Yesteryear", cursive;
+  font-family: "CaviarBItalic";
   font-weight: 400;
   font-size: 40px;
   font-style: normal;
