@@ -3,8 +3,6 @@ import { motion } from 'framer-motion';
 import refurbished from './videos/refurbished.webm';
 import notesapp from './videos/Notesapp.webm';
 import imagegen from './videos/ImageGenApp.webm';
-import To_Do_List from './images/To_Do_List.png';
-import WorkoutTracker from './images/WorkoutTracker.png';
 import html5 from './images/html-5.png';
 import css3 from './images/css-3.png';
 import javascript from './images/javascript.png';
