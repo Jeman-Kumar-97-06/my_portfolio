@@ -28,6 +28,11 @@
   font-size: 50px;
 }
 
+@font-face {
+  font-family: 'CaviarThin';
+  src: url('./assets/fonts/CaviarDreams.ttf');
+}
+
 .refurb_proj {
   margin-bottom: 50px;
   
@@ -210,6 +215,7 @@ body{
 .top_div p{
   margin-top:60px;
   width: 80vw;
+  font-size: 20px;
 }
 
 .text-container {
@@ -399,6 +405,37 @@ h4{
 }
 
 @media only screen and (max-width:920px) {
+  .name_mine{
+    font-size:40px;
+  }
+  .xtra{
+    display: none;
+    
+  }
+  .text-container{
+    width:80vw;
+  }
+
+  .top_div{
+    width:90vw;
+  }
+
+  .top_div p{
+    font-size: 15px;
+    margin-top: 25px;
+    font-family: 'CaviarThin';
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  .skills{
+    margin-top:10px;
+  }
+
+  .skills h3{
+    margin-top: 10px;
+  }
+
   .projects-container{
     align-self: center;
     margin: auto;
@@ -427,7 +464,7 @@ h4{
   .fsd{
     font-size: 17px;
   }
-  
+
   .skill_list img{
     margin:15px;
   }

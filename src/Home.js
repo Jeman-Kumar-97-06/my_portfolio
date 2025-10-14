@@ -32,7 +32,7 @@ const Home = () => {
     },
     {
         title : "Backgroundz App",
-        description : "<ul><li>Backgroundz is a full-stack wallpaper application that lets users upload, search, categorize, and download high-quality wallpapers.</li><li>Features user authentication via <u>JWT</u> and <u>Google OAuth</u></li><li>Stores images securely using <u>Cloudinary</u>.</li><li>Built with a modern UI using <u>Tailwind CSS</u></li><li>Includes dunamic search, category filters, and dowload support</li>",
+        description : "<ul><li>Backgroundz is a full-stack wallpaper app that lets users upload, search, categorize & download wallpapers.</li><li>Features user authentication via <u>JWT</u> and <u>Google OAuth</u></li><li>Stores images securely using <u>Cloudinary</u>.</li><li>Built with a modern UI using <u>Tailwind CSS</u></li><li>Includes dynamic search, category filters, & download support</li>",
         video: backgroundz,
         link  : 'https://capable-zuccutto-91acf1.netlify.app/',
         gitlink:'https://github.com/Jeman-Kumar-97-06/'
@@ -91,15 +91,13 @@ const Home = () => {
                     <h3 className='name_mine'>Jeman Kumar.</h3>
                 </div>
                 <p style={{
-                        fontFamily : 'Caviar',
-                        fontSize: '20px', // Fits the height of h-32 (~128px) dynamically
-                        lineHeight: '1',
+                        fontSize: '', // Fits the height of h-32 (~128px) dynamically
                         // textShadow: '0 0 5px white, 0 0 15px white',
                     }}>
                     <span>
                         &nbsp; &nbsp; &nbsp;I’m a <u>MERN</u> stack developer with hands-on experience in building full-stack applications using MongoDB, Express.js, React, and Node.js. I also work with Docker for containerization, Redis for caching and session management, and have a solid understanding of <u>MCP (Model Context Protocol)</u> for integrating LLM-powered tools into web apps.<br/>
 
-                        &nbsp; &nbsp; &nbsp;Alongside web development, I’m familiar with <u>Python</u> and <u>C/C++ syntax</u> and <u>networking fundamentals</u>, which helps me understand system-level concepts and backend logic deeply. I focus on creating efficient, scalable, and maintainable solutions — whether that’s a modern web app, an AI-integrated system, or a backend API.<br/>
+                        <span className='xtra'>&nbsp; &nbsp; &nbsp;Alongside web development, I’m familiar with <u>Python</u> and <u>C/C++ syntax</u> and <u>networking fundamentals</u>, which helps me understand system-level concepts and backend logic deeply. I focus on creating efficient, scalable, and maintainable solutions — whether that’s a modern web app, an AI-integrated system, or a backend API.<br/></span>
 
                         &nbsp; &nbsp; &nbsp;I’m currently looking for a remote job or freelancing gig where I can contribute to real-world projects, keep learning new technologies, and deliver impactful results.
                     </span>
@@ -111,14 +109,12 @@ const Home = () => {
                     <img src={html5} alt='html5' width="50" height="50"/>
                     <img src={css3} alt='css3' width="50" height="50"/>
                     <img src={javascript} alt='js' width="50" height="50"/>
-                    <img src={typescript} alt='ts' width="50" height="50"/>
                     <img src={nodejs} alt='nodejs' width="50" height="50"/>
                     <img src={react} alt='reactjs' width="50" height="50"/>
                     <img src={mongodb} alt='mongodb' width="50" height="50"/>
                     <img src={express} alt='expressjs' width="50" height="50"/>
                     <img src={redis} alt='redis' width="50" height="50"/>
                     <img src={linux} alt='linux' width="50" height="50"/>
-                    <img src={aws} alt='aws' width="50" height="50"/>
                     <img src={graphql} alt='graphql' width='50' height='50'/>
                     <img src={docker} alt='docker' width='50' height='50'/>
                     <img src={python} alt='python' width='50' height='50'/>
