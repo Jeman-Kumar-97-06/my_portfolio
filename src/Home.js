@@ -127,7 +127,7 @@ const Home = () => {
             <div className='portfolio_mern'>
                 <h3>Projects.</h3>
                 <div className='projects-container'>
-                {vid_projects.map((refurb)=><div className='refurb_proj'>
+                {/* {vid_projects.map((refurb)=><div className='refurb_proj'>
                 <motion.div
                     style={{
                         fontFamily : 'Caviar',
@@ -169,7 +169,8 @@ const Home = () => {
                             <a href={refurb.gitlink} rel='noreferrer' target="_blank">💻 Code</a>
                     </div>
                 </motion.div>
-                </div>)}
+                </div>)} */}
+                
                 </div>
 
                 
