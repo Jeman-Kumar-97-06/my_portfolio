@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.c4585879.css",
-    "main.js": "/my_portfolio/static/js/main.364dbfcc.js",
+    "main.css": "/my_portfolio/static/css/main.8d1ca8d7.css",
+    "main.js": "/my_portfolio/static/js/main.4333ded6.js",
     "static/media/refurbished.webm": "/my_portfolio/static/media/refurbished.b941b8fdd56ffe150fec.webm",
     "static/media/backgroundz.webm": "/my_portfolio/static/media/backgroundz.89237d8d08ee23226de2.webm",
     "static/media/ImageGenApp.webm": "/my_portfolio/static/media/ImageGenApp.863e65067192cae946f2.webm",
@@ -9,14 +9,15 @@
     "static/media/CaviarDreams_BoldItalic.ttf": "/my_portfolio/static/media/CaviarDreams_BoldItalic.f5500499175e475b07a0.ttf",
     "static/media/CaviarDreams_Italic.ttf": "/my_portfolio/static/media/CaviarDreams_Italic.0c76ebb1c07ff05ceccc.ttf",
     "static/media/Ethnic.otf": "/my_portfolio/static/media/Ethnic.2bbc27ffa91138056b36.otf",
+    "static/media/CaviarDreams.ttf": "/my_portfolio/static/media/CaviarDreams.174b0a13f7e49c169450.ttf",
     "static/media/CaviarDreams_Bold.ttf": "/my_portfolio/static/media/CaviarDreams_Bold.1062ba91167e0c325786.ttf",
     "static/media/linkedin.png": "/my_portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/my_portfolio/index.html",
-    "main.c4585879.css.map": "/my_portfolio/static/css/main.c4585879.css.map",
-    "main.364dbfcc.js.map": "/my_portfolio/static/js/main.364dbfcc.js.map"
+    "main.8d1ca8d7.css.map": "/my_portfolio/static/css/main.8d1ca8d7.css.map",
+    "main.4333ded6.js.map": "/my_portfolio/static/js/main.4333ded6.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4585879.css",
-    "static/js/main.364dbfcc.js"
+    "static/css/main.8d1ca8d7.css",
+    "static/js/main.4333ded6.js"
   ]
 }
