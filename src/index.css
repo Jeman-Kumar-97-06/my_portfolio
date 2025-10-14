@@ -38,7 +38,6 @@
   
   .project-card {
     border-radius: 10px;
-    
     text-align: center;
     width: 500px;
     max-width: 600px;
@@ -449,7 +448,7 @@ h4{
   }
 
   .project-video{
-    width:100%;
+    /* width:100%; */
   }
 
   .refurb_proj{
